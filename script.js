@@ -105,6 +105,9 @@ function start() {
     drawTitle();
 
     drawAuthor();
+
+}
+
 /*
 ---------------------------------------------------------
 タイトル終了
@@ -117,6 +120,7 @@ titleScreen.classList.remove("active");
 
 readingScreen.classList.add("active");
 
+}
 }
 
 start();
