@@ -24,27 +24,43 @@ const TITLE = {
 
     characters: [
 
-        // 後で追加
+        { text: "■", x: 690, y: 185, class: "titleChar" },
+
+        { text: "ど", x: 690, y: 255, class: "titleChar" },
+
+        { text: "（", x: 690, y: 335, class: "titleChar" },
+
+        { text: "う", x: 690, y: 405, class: "titleChar" },
+
+        { text: "し", x: 690, y: 475, class: "titleChar" },
+
+        { text: "ろ", x: 690, y: 545, class: "titleChar" },
+
+        { text: "■", x: 690, y: 625, class: "titleChar" },
+
+        { text: "（", x: 690, y: 705, class: "titleChar" },
+
+        { text: "#", x: 690, y: 775, class: "titleChar" },
+
+        { text: "、", x: 690, y: 845, class: "titleChar" }
 
     ]
 
 };
 
-/*
-
----------------------------------------------------------
-
-作者名
-
----------------------------------------------------------
-
-*/
-
 const AUTHOR = {
 
     characters: [
 
-        // 後で追加
+        { text: "平", x: 610, y: 1490, class: "authorChar" },
+
+        { text: "川", x: 610, y: 1555, class: "authorChar" },
+
+        { text: "綾", x: 610, y: 1620, class: "authorChar" },
+
+        { text: "真", x: 610, y: 1685, class: "authorChar" },
+
+        { text: "智", x: 610, y: 1750, class: "authorChar" }
 
     ]
 
