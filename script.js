@@ -1,0 +1,107 @@
+/*
+
+=========================================================
+
+script.js
+
+=========================================================
+
+*/
+
+const SVG_NS = "http://www.w3.org/2000/svg";
+
+const titleSVG = document.getElementById("titleSVG");
+
+/*
+
+---------------------------------------------------------
+
+SVG文字生成
+
+---------------------------------------------------------
+
+*/
+
+function createCharacter(character) {
+
+    const text = document.createElementNS(SVG_NS, "text");
+
+    text.textContent = character.text;
+
+    text.setAttribute("x", character.x);
+
+    text.setAttribute("y", character.y);
+
+    text.setAttribute("class", character.class);
+
+    return text;
+
+}
+
+/*
+
+---------------------------------------------------------
+
+タイトル描画
+
+---------------------------------------------------------
+
+*/
+
+function drawTitle() {
+
+    TITLE.characters.forEach(character => {
+
+        titleSVG.appendChild(
+
+            createCharacter(character)
+
+        );
+
+    });
+
+}
+
+/*
+
+---------------------------------------------------------
+
+作者名描画
+
+---------------------------------------------------------
+
+*/
+
+function drawAuthor() {
+
+    AUTHOR.characters.forEach(character => {
+
+        titleSVG.appendChild(
+
+            createCharacter(character)
+
+        );
+
+    });
+
+}
+
+/*
+
+---------------------------------------------------------
+
+開始
+
+---------------------------------------------------------
+
+*/
+
+function start() {
+
+    drawTitle();
+
+    drawAuthor();
+
+}
+
+start();
