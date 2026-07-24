@@ -12,6 +12,10 @@ const SVG_NS = "http://www.w3.org/2000/svg";
 
 const titleSVG = document.getElementById("titleSVG");
 
+const titleScreen = document.getElementById("titleScreen")
+
+const readingScreen = document.getElementById("readingScreen")
+
 /*
 
 ---------------------------------------------------------
@@ -105,3 +109,9 @@ function start() {
 }
 
 start();
+
+titleScreen.addEventListener("click", ()
+
+　　hideTitle();
+
+});
