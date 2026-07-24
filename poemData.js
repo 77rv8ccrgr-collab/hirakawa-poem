@@ -24,25 +24,25 @@ const TITLE = {
 
     characters: [
 
-        { text: "■", x: 690, y: 185, class: "titleChar" },
+        { text: "-", x: 730, y: 185, class: "titleChar" },
 
-        { text: "ど", x: 690, y: 255, class: "titleChar" },
+        { text: "ど", x: 730, y: 255, class: "titleChar" },
 
-        { text: "（", x: 690, y: 335, class: "titleChar" },
+        { text: "（", x: 730, y: 335, class: "titleChar" },
 
-        { text: "う", x: 690, y: 405, class: "titleChar" },
+        { text: "う", x: 730, y: 405, class: "titleChar" },
 
-        { text: "し", x: 690, y: 475, class: "titleChar" },
+        { text: "し", x: 730, y: 475, class: "titleChar" },
 
-        { text: "ろ", x: 690, y: 545, class: "titleChar" },
+        { text: "ろ", x: 730, y: 545, class: "titleChar" },
 
-        { text: "■", x: 690, y: 625, class: "titleChar" },
+        { text: "■", x: 730, y: 625, class: "titleChar" },
 
-        { text: "（", x: 690, y: 705, class: "titleChar" },
+        { text: "（", x: 730, y: 705, class: "titleChar" },
 
-        { text: "#", x: 690, y: 775, class: "titleChar" },
+        { text: "#", x: 730, y: 775, class: "titleChar" },
 
-        { text: "、", x: 690, y: 845, class: "titleChar" }
+        { text: "、", x: 730, y: 845, class: "titleChar" }
 
     ]
 
@@ -52,15 +52,15 @@ const AUTHOR = {
 
     characters: [
 
-        { text: "平", x: 610, y: 1490, class: "authorChar" },
+        { text: "平", x: 650, y: 1490, class: "authorChar" },
 
-        { text: "川", x: 610, y: 1555, class: "authorChar" },
+        { text: "川", x: 650, y: 1555, class: "authorChar" },
 
-        { text: "綾", x: 610, y: 1620, class: "authorChar" },
+        { text: "綾", x: 650, y: 1620, class: "authorChar" },
 
-        { text: "真", x: 610, y: 1685, class: "authorChar" },
+        { text: "真", x: 650, y: 1685, class: "authorChar" },
 
-        { text: "智", x: 610, y: 1750, class: "authorChar" }
+        { text: "智", x: 650, y: 1750, class: "authorChar" }
 
     ]
 
