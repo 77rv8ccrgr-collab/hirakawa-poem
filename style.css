@@ -1,20 +1,86 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
 html,
 
 body{
-
-    margin:0;
 
     width:100%;
 
     height:100%;
 
+    overflow:hidden;
+
     background:#ffffff;
 
-    overflow:hidden;
+    touch-action:manipulation;
+
+    -webkit-user-select:none;
+
+    user-select:none;
+
+    font-family:
+
+        "Hiragino Mincho ProN",
+
+        "Yu Mincho",
+
+        serif;
 
 }
 
-body{
+#app{
+
+    position:relative;
+
+    width:100vw;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+}
+
+.screen{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:opacity .8s ease;
+
+    background:#ffffff;
+
+}
+
+.screen.active{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+#titleScreen,
+
+#readingScreen{
 
     display:flex;
 
@@ -22,8 +88,158 @@ body{
 
     align-items:center;
 
-    font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+}
 
-    font-size:32px;
+#titleSVG,
+
+#poemSVG{
+
+    width:100%;
+
+    height:100%;
+
+}
+
+#camera{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    transform-origin:center center;
+
+    will-change:transform;
+
+}
+
+#barLayer,
+
+#symbolLayer,
+
+#footLayer,
+
+#fadeLayer{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+#barLayer{
+
+    z-index:20;
+
+}
+
+#symbolLayer{
+
+    z-index:30;
+
+}
+
+#footLayer{
+
+    z-index:40;
+
+}
+
+#fadeLayer{
+
+    z-index:100;
+
+    background:#ffffff;
+
+    opacity:0;
+
+}
+
+.verticalChar{
+
+    font-size:42px;
+
+    fill:#111111;
+
+    writing-mode:vertical-rl;
+
+    text-orientation:upright;
+
+}
+
+.titleChar{
+
+    font-size:56px;
+
+    fill:#111111;
+
+    writing-mode:vertical-rl;
+
+    text-orientation:upright;
+
+}
+
+.authorChar{
+
+    font-size:34px;
+
+    fill:#111111;
+
+    writing-mode:vertical-rl;
+
+    text-orientation:upright;
+
+}
+
+.hidden{
+
+    opacity:0;
+
+}
+
+.fadeIn{
+
+    animation:fadeIn .8s forwards;
+
+}
+
+.fadeOut{
+
+    animation:fadeOut .8s forwards;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes fadeOut{
+
+    from{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        opacity:0;
+
+    }
 
 }
