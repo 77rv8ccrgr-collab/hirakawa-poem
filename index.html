@@ -6,51 +6,121 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
 
-<title>HIRAKAWA POEM</title>
+    name="viewport"
 
-<style>
+    content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 
-html, body {
+<title>■ど（うしろ■#、</title>
 
-    margin: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-    background: white;
-
-}
-
-body {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    font-family: serif;
-
-    font-size: 32px;
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<svg id="poem" viewBox="0 0 390 844">
+<div id="app">
 
-</svg>
+    <!--==============================-->
 
-<script>
+    <!-- TITLE -->
 
-</script>
+    <!--==============================-->
+
+    <section
+
+        id="titleScreen"
+
+        class="screen active">
+
+        <svg
+
+            id="titleSVG"
+
+            viewBox="0 0 1080 1920"
+
+            preserveAspectRatio="xMidYMid meet">
+
+            <!--
+
+                タイトル画面は
+
+                script.jsから
+
+                一文字ずつ生成する。
+
+                HTMLには
+
+                一切文字を書かない。
+
+                余白・字間・位置は
+
+                全てSVG座標で固定。
+
+            -->
+
+        </svg>
+
+    </section>
+
+    <!--==============================-->
+
+    <!-- READING -->
+
+    <!--==============================-->
+
+    <section
+
+        id="readingScreen"
+
+        class="screen">
+
+        <div id="camera">
+
+            <svg
+
+                id="poemSVG"
+
+                viewBox="0 0 1080 1920"
+
+                preserveAspectRatio="xMidYMid meet">
+
+                <!--
+
+                    詩本文
+
+                    script.jsが
+
+                    SVGへ
+
+                    一文字ずつ描画。
+
+                -->
+
+            </svg>
+
+        </div>
+
+    </section>
+
+    <!--==============================-->
+
+    <!-- EFFECT LAYERS -->
+
+    <!--==============================-->
+
+    <div id="barLayer"></div>
+
+    <div id="symbolLayer"></div>
+
+    <div id="footLayer"></div>
+
+    <div id="fadeLayer"></div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 
