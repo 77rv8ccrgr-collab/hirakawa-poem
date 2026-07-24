@@ -24,7 +24,7 @@ const TITLE = {
 
     characters: [
 
-        { text: "‐", x: 730, y: 180, class: "titleChar" },
+        { text: "‐", x: 730, y: 115, class: "titleChar" },
 
         { text: "■", x: 730, y: 185, class: "titleChar" },
 
