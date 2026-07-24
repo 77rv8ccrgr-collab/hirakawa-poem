@@ -24,11 +24,11 @@ const TITLE = {
 
     characters: [
 
-        { text: "-", x: 730, y: 185, class: "titleChar" },
+        { text: "‐", x: 730, y: 185, class: "titleChar" },
 
         { text: "ど", x: 730, y: 255, class: "titleChar" },
 
-        { text: "（", x: 730, y: 335, class: "titleChar" },
+        { text: "︵", x: 730, y: 335, class: "titleChar" },
 
         { text: "う", x: 730, y: 405, class: "titleChar" },
 
@@ -38,7 +38,7 @@ const TITLE = {
 
         { text: "■", x: 730, y: 625, class: "titleChar" },
 
-        { text: "（", x: 730, y: 705, class: "titleChar" },
+        { text: "︵", x: 730, y: 705, class: "titleChar" },
 
         { text: "#", x: 730, y: 775, class: "titleChar" },
 
