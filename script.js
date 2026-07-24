@@ -118,7 +118,6 @@ titleScreen.classList.remove("active");
 readingScreen.classList.add("active");
 
 }
-}
 
 start();
 
