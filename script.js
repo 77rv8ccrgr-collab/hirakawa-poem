@@ -124,6 +124,6 @@ start();
 
 titleScreen.addEventListener("click", ()
 
-　　hideTitle();
+  hideTitle();
 
 });
