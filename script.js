@@ -122,7 +122,7 @@ readingScreen.classList.add("active");
 
 start();
 
-titleScreen.addEventListener("click", ()
+titleScreen.addEventListener("click", () =>({
 
   hideTitle();
 
