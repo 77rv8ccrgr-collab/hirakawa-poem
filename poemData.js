@@ -96,7 +96,7 @@ const POEM = {
 
     */
 
-    fontSize: 42,
+    fontSize: 34,
 
     /*
 
@@ -122,7 +122,7 @@ const POEM = {
 
     columnGap: 70,
 
-    lineGap: 48,
+    lineGap: 40,
 
     columns: [
 
