@@ -118,11 +118,11 @@ const POEM = {
 
     startX: 900,
 
-    startY: 600,
+    startY: 200,
 
-    columnGap: 380,
+    columnGap: 70,
 
-    lineGap: 120,
+    lineGap: 40,
 
     columns: [
 
@@ -151,7 +151,7 @@ const POEM = {
 {
     id: "block2",
 
-    startX: 270,
+    startX: 620,
 
     startY: 200,
 
@@ -184,7 +184,7 @@ const POEM = {
 {
     id: "block3",
 
-    startX: 540,
+    startX: 380,
 
     startY: 200,
 
@@ -209,7 +209,7 @@ const POEM = {
 {
     id: "block4",
 
-    startX: 90,
+    startX: 120,
 
     startY: 200,
 
