@@ -113,34 +113,39 @@ const POEM = {
         */
 
         {
+    id: "right",
 
-            id: 0,
+    startX: 900,
 
-            chars: [
+    startY: 200,
 
-    { text:"■", x:900, y:200, class:"poemChar" },
-    { text:"ど", x:900, y:270, class:"poemChar" },
-    { text:"（", x:900, y:340, class:"poemChar" },
-    { text:"、", x:900, y:410, class:"poemChar" },
-    { text:"ど", x:900, y:480, class:"poemChar" },
-    { text:"ど", x:900, y:550, class:"poemChar" },
-    { text:"■", x:900, y:620, class:"poemChar" },
-    { text:"ぞ", x:900, y:690, class:"poemChar" },
-    { text:"と", x:900, y:760, class:"poemChar" },
-    { text:"絞", x:900, y:830, class:"poemChar" },
-    { text:"っ", x:900, y:900, class:"poemChar" },
-    { text:"て", x:900, y:970, class:"poemChar" },
-    { text:"■", x:900, y:1040, class:"poemChar" },
-    { text:"跨", x:900, y:1110, class:"poemChar" },
-    { text:"る", x:900, y:1180, class:"poemChar" },
-    { text:"白", x:900, y:1250, class:"poemChar" },
-    { text:"熱", x:900, y:1320, class:"poemChar" },
-    { text:"球", x:900, y:1390, class:"poemChar" },
-    { text:"お", x:900, y:1460, class:"poemChar" }
+    columnGap: 70,
 
-]
+    lineGap: 70,
 
-        },
+    columns: [
+
+        "◾️ど（どど◾️ど（、どど◾️うぞと絞って◾️跨る白熱球お",
+
+        "姉さん◾️が顔を皮下（脂肪の黄色が◾️かった層に◾️はで",
+
+        "（き◾️なかったね（、◾️ど(#　ド)どとど◾️ど赤の階調",
+
+        "◾️の、ど◾️ど腸◾️どどど中◾️にあって、砂浜メートル◾️",
+
+        "に◾️打ち寄せ◾️る　　　ル◾️パンの9　泡◾️ですなぁ◾️ど、",
+
+        "（どど。◾️明るく挿◾️入され◾️ていた背骨デ◾️ジタルへ",
+
+        "◾️小学生の◾️執刀医ジャム（を◾️指先で◾️（#　レ）◾️皮、",
+
+        "下脂◾️肪◾️どど（黄色に◾️つまむ◾️。呉服チェーン姿◾️",
+
+        "（は、どど（◾️階◾️調マカデミアの◾️砂浜に◾️行けば？"
+
+    ]
+
+}
 
     ]
 
