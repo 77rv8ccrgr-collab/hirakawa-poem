@@ -118,6 +118,8 @@ function start() {
 
     POEM.columns.forEach(block => {
 
+       console.log(block.id, block.startX); 
+
         // ===== デバッグ用：ブロックの右端ガイド =====
 const guide = document.createElementNS(
     "http://www.w3.org/2000/svg",
