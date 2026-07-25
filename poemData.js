@@ -124,7 +124,7 @@ const POEM = {
 
     columnGap: 56,
 
-    lineGap: 50,
+    lineGap: 55,
 
     xPositions: [
     980, // 1列目（右端）
@@ -170,7 +170,7 @@ const POEM = {
 
     columnGap: 56,
 
-    lineGap: 50,
+    lineGap: 55,
 
     xPositions: [
     700,
@@ -214,7 +214,7 @@ const POEM = {
 
     columnGap: 56,
 
-    lineGap: 50,
+    lineGap: 55,
 
     xPositions: [
     390,
@@ -261,7 +261,7 @@ const POEM = {
 
     columnGap: 56,
 
-    lineGap: 50,
+    lineGap: 55,
 
     xPositions: [
     -130,
