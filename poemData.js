@@ -149,7 +149,7 @@ const POEM = {
 
     ]
 
-};
+},
 
 {
     id: "block2",
