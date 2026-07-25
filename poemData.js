@@ -113,7 +113,8 @@ const POEM = {
         */
 
         {
-    id: "block1",
+            
+            id: "block1",
 
     startX: 900,
 
