@@ -116,9 +116,18 @@ function start() {
 
  function drawPoem() {
 
-    console.log("drawPoem");
+    POEM.columns.forEach(column => {
 
-    POEM.columns.forEach(column => console.log(column));
+    column.chars.forEach(character => {
+
+        poemSVG.appendChild(
+            createCharacter(character)
+        );
+
+    });
+
+});
+
 
 }
 
