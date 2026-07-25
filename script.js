@@ -148,7 +148,9 @@ poemSVG.appendChild(guide);
 
                         text: char,
 
-                        x: block.startX - columnIndex * block.columnGap,
+                        x: block.xPositions
+    ? block.xPositions[columnIndex]
+    : block.startX - columnIndex * block.columnGap,
 
                         y: block.startY + rowIndex * block.lineGap,
 
