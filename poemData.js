@@ -98,7 +98,7 @@ const POEM = {
 
     */
 
-    fontSize: 34,
+    fontSize: 32,
 
     /*
 
