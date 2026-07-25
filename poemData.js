@@ -120,7 +120,7 @@ const POEM = {
 
     startY: 200,
 
-    columnGap: 70,
+    columnGap: 52,
 
     lineGap: 40,
 
@@ -155,7 +155,7 @@ const POEM = {
 
     startY: 200,
 
-    columnGap: 70,
+    columnGap: 52,
 
     lineGap: 40,
 
@@ -188,7 +188,7 @@ const POEM = {
 
     startY: 200,
 
-    columnGap: 70,
+    columnGap: 52,
 
     lineGap: 40,
 
@@ -213,7 +213,7 @@ const POEM = {
 
     startY: 200,
 
-    columnGap: 70,
+    columnGap: 52,
 
     lineGap: 40,
 
