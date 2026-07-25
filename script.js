@@ -118,6 +118,8 @@ function start() {
 
     console.log("drawPoem");
 
+    POEM.columns.forEach(column => console.log(column));
+
 }
 
 /*
