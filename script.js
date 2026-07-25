@@ -104,6 +104,8 @@ function drawAuthor() {
 
 function start() {
 
+    console.log("start");
+
     drawTitle();
 
     drawAuthor();
@@ -113,7 +115,7 @@ function start() {
 }
 
  function drawPoem() {
-    
+
     console.log("drawPoem");
 
 }
