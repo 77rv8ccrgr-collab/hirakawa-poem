@@ -118,14 +118,27 @@ const POEM = {
 
             chars: [
 
-                {
-    text: "■",
-    x: 900,
-    y: 200,
-    class: "poemChar"
-}
+    { text:"■", x:900, y:200, class:"poemChar" },
+    { text:"ど", x:900, y:270, class:"poemChar" },
+    { text:"（", x:900, y:340, class:"poemChar" },
+    { text:"、", x:900, y:410, class:"poemChar" },
+    { text:"ど", x:900, y:480, class:"poemChar" },
+    { text:"ど", x:900, y:550, class:"poemChar" },
+    { text:"■", x:900, y:620, class:"poemChar" },
+    { text:"ぞ", x:900, y:690, class:"poemChar" },
+    { text:"と", x:900, y:760, class:"poemChar" },
+    { text:"絞", x:900, y:830, class:"poemChar" },
+    { text:"っ", x:900, y:900, class:"poemChar" },
+    { text:"て", x:900, y:970, class:"poemChar" },
+    { text:"■", x:900, y:1040, class:"poemChar" },
+    { text:"跨", x:900, y:1110, class:"poemChar" },
+    { text:"る", x:900, y:1180, class:"poemChar" },
+    { text:"白", x:900, y:1250, class:"poemChar" },
+    { text:"熱", x:900, y:1320, class:"poemChar" },
+    { text:"球", x:900, y:1390, class:"poemChar" },
+    { text:"お", x:900, y:1460, class:"poemChar" }
 
-            ]
+]
 
         },
 
