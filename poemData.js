@@ -118,11 +118,11 @@ const POEM = {
 
     startX: 900,
 
-    startY: 200,
+    startY: 600,
 
-    columnGap: 70,
+    columnGap: 380,
 
-    lineGap: 40,
+    lineGap: 120,
 
     columns: [
 
