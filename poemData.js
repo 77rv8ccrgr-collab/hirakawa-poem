@@ -121,7 +121,7 @@ const POEM = {
 
     columnGap: 70,
 
-    lineGap: 70,
+    lineGap: 48,
 
     columns: [
 
