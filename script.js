@@ -108,6 +108,14 @@ function start() {
 
     drawAuthor();
 
+    drawPoem();
+
+}
+
+ function drawPoem() {
+    
+    console.log("drawPoem");
+
 }
 
 /*
