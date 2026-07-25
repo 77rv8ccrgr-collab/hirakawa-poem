@@ -153,7 +153,7 @@ const POEM = {
 {
     id: "block2",
 
-    startX: 680,
+    startX: 640,
 
     startY: 200,
 
@@ -186,7 +186,7 @@ const POEM = {
 {
     id: "block3",
 
-    startX: 430,
+    startX: 420,
 
     startY: 200,
 
