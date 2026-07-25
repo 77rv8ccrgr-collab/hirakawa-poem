@@ -116,18 +116,33 @@ function start() {
 
  function drawPoem() {
 
-    POEM.columns.forEach(column => {
+    POEM.columns.forEach(block => {
 
-    column.chars.forEach(character => {
+        block.columns.forEach((line, columnIndex) => {
 
-        poemSVG.appendChild(
-            createCharacter(character)
-        );
+            [...line].forEach((char, rowIndex) => {
+
+                poemSVG.appendChild(
+
+                    createCharacter({
+
+                        text: char,
+
+                        x: block.startX - columnIndex * block.columnGap,
+
+                        y: block.startY + rowIndex * block.lineGap,
+
+                        class: "poemChar"
+
+                    })
+
+                );
+
+            });
+
+        });
 
     });
-
-});
-
 
 }
 
