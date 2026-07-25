@@ -16,7 +16,7 @@ const titleScreen = document.getElementById("titleScreen")
 
 const readingScreen = document.getElementById("readingScreen")
 
-const readingSVG = document.getElementById("readingSVG");
+const poemSVG = document.getElementById("poemSVG");
 
 /*
 
