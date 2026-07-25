@@ -118,6 +118,24 @@ function start() {
 
     POEM.columns.forEach(block => {
 
+        // ===== デバッグ用：ブロックの右端ガイド =====
+const guide = document.createElementNS(
+    "http://www.w3.org/2000/svg",
+    "line"
+);
+
+guide.setAttribute("x1", block.startX);
+guide.setAttribute("x2", block.startX);
+guide.setAttribute("y1", 0);
+guide.setAttribute("y2", POEM.height);
+
+guide.setAttribute("stroke", "#ff4d4d");
+guide.setAttribute("stroke-width", "2");
+guide.setAttribute("stroke-dasharray", "12 8");
+
+poemSVG.appendChild(guide);
+// ===============================
+
         block.columns.forEach((line, columnIndex) => {
 
             [...line].forEach((char, rowIndex) => {
