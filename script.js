@@ -121,6 +121,8 @@ function start() {
        console.log(block.id, block.startX); 
 
         // ===== デバッグ用：ブロックの右端ガイド =====
+
+ /*       
 const guide = document.createElementNS(
     "http://www.w3.org/2000/svg",
     "line"
@@ -136,6 +138,9 @@ guide.setAttribute("stroke-width", "2");
 guide.setAttribute("stroke-dasharray", "12 8");
 
 poemSVG.appendChild(guide);
+
+*/
+
 // ===============================
 
         block.columns.forEach((line, columnIndex) => {
