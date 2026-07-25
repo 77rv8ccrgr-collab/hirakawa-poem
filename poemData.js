@@ -118,7 +118,12 @@ const POEM = {
 
             chars: [
 
-                // 後で追加
+                {
+    text: "■",
+    x: 900,
+    y: 200,
+    class: "poemChar"
+}
 
             ]
 
