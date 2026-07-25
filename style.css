@@ -243,3 +243,13 @@ body{
     }
 
 }
+
+.poemChar {
+
+    font-size: 64px;
+
+    writing-mode: vertical-rl;
+
+    text-orientation: upright;
+
+}
