@@ -82,6 +82,16 @@ function createCharacter(character) {
     // 将来、文字サイズを変えたい文字用
     if (special?.fontSize) {
         text.setAttribute("font-size", special.fontSize);
+
+    }
+
+
+// 3ブロック目の「（」だけ
+if (
+    character.blockIndex === 2 &&
+    character.text === "（"
+) {
+    text.setAttribute("font-size", 36);
     }
 
     return text;
