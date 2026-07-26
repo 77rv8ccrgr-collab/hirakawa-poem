@@ -249,6 +249,18 @@ body{
 
     writing-mode: vertical-rl;
 
-    text-orientation: mixed;
+    text-orientation: upright;
 
+}
+
+.horizontalChar {
+
+    font-size: 44px;
+
+    writing-mode: horizontal-tb;
+
+    font-family:
+        "ＭＳ 明朝",
+        "MS Mincho",
+        serif;
 }
