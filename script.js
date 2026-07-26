@@ -46,7 +46,7 @@ function createCharacter(character) {
         className += " horizontalChar";
     }
 
-    text.setAttribute("class", character.class);
+    text.setAttribute("class", className);
 
     return text;
 
