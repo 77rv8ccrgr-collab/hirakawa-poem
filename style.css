@@ -27,11 +27,10 @@ body{
     user-select:none;
 
     font-family:
-
-        "ＭＳ 明朝",
-    "MS Mincho",
-
-        serif;
+"BIZ UDP明朝",
+"MS 明朝",
+"Yu Mincho",
+serif;
 
 }
 
@@ -255,7 +254,7 @@ body{
 
 .horizontalChar {
 
-    font-size: 44px;
+    font-size: 36px;
 
     writing-mode: horizontal-tb;
 
