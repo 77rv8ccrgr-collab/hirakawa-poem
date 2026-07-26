@@ -41,10 +41,10 @@ const specialCharacters = {
     "6": { horizontal: true, dx: -14, dy: 2 },
     "7": { horizontal: true, dx: -14, dy: 2 },
     "8": { horizontal: true, dx: -14, dy: 2 },
-    "9": { horizontal: true, dx: -14, dy: 8 },
+    "9": { horizontal: true, dx: -14, dy: 15 },
 
-    "？": { rotate: 90, dx: 17, dy: 6 },
-    "?": { rotate: 90, dx: 17, dy: 6 }
+    "？": { rotate: 90, dx: 19, dy: 8 },
+    "?": { rotate: 90, dx: 19, dy: 8 }
 
 };
 
