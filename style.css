@@ -251,9 +251,6 @@ body{
 
     text-orientation: upright;
 
-    transform: scaleX(1.05);
-    transform-origin: center;
-
 }
 
 .horizontalChar {
