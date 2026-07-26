@@ -205,6 +205,8 @@ poemSVG.appendChild(guide);
 
                         class: "poemChar"
 
+                        blockIndex
+
                     })
 
                 );
