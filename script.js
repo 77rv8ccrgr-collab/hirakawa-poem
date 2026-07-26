@@ -203,7 +203,7 @@ poemSVG.appendChild(guide);
 
                         y: block.startY + rowIndex * block.lineGap,
 
-                        class: "poemChar"
+                        class: "poemChar",
 
                         blockIndex
 
