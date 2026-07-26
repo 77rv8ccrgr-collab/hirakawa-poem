@@ -38,6 +38,14 @@ function createCharacter(character) {
 
     text.setAttribute("y", character.y);
 
+    const horizontalPattern = /[A-Za-z0-9#()（）]/;
+
+    let className = character.class;
+
+    if (horizontalPattern.test(character.text)) {
+        className += " horizontalChar";
+    }
+
     text.setAttribute("class", character.class);
 
     return text;
