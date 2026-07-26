@@ -58,22 +58,34 @@ function createCharacter(character) {
 
     text.textContent = character.text;
 
-const special = specialCharacters[character.text];
+    const special = specialCharacters[character.text];
 
-const x = character.x + (special?.dx ?? 0);
-const y = character.y + (special?.dy ?? 0);
+    const x = character.x + (special?.dx ?? 0);
+    const y = character.y + (special?.dy ?? 0);
 
-text.setAttribute("x", x);
-text.setAttribute("y", y);
+    text.setAttribute("x", x);
+    text.setAttribute("y", y);
 
-let className = character.class;
+    let className = character.class;
 
-if (special?.horizontal) {
-    className += " horizontalChar";
-}
+    if (special?.horizontal) {
+        className += " horizontalChar";
+    }
 
-text.setAttribute("class", className);
+    text.setAttribute("class", className);
 
+    // 回転（必要な文字だけ）
+    if (special?.rotate) {
+        text.setAttribute(
+            "transform",
+            `rotate(${special.rotate} ${x} ${y})`
+        );
+    }
+
+    // 将来、文字サイズを変えたい文字用
+    if (special?.fontSize) {
+        text.setAttribute("font-size", special.fontSize);
+    }
 
     return text;
 
