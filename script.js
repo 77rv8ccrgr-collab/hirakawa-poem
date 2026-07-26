@@ -28,25 +28,48 @@ SVG文字生成
 
 */
 
+const specialCharacters = {
+
+    "#":  { horizontal: true, dx: -8, dy: -6 },
+
+    "0": { horizontal: true, dx: -8, dy: -6 },
+    "1": { horizontal: true, dx: -8, dy: -6 },
+    "2": { horizontal: true, dx: -8, dy: -6 },
+    "3": { horizontal: true, dx: -8, dy: -6 },
+    "4": { horizontal: true, dx: -8, dy: -6 },
+    "5": { horizontal: true, dx: -8, dy: -6 },
+    "6": { horizontal: true, dx: -8, dy: -6 },
+    "7": { horizontal: true, dx: -8, dy: -6 },
+    "8": { horizontal: true, dx: -8, dy: -6 },
+    "9": { horizontal: true, dx: -8, dy: -6 },
+
+    "a": { horizontal: true, dx: -8, dy: -6 },
+    "b": { horizontal: true, dx: -8, dy: -6 },
+    "r": { horizontal: true, dx: -8, dy: -6 },
+    "y": { horizontal: true, dx: -8, dy: -6 }
+
+};
+
 function createCharacter(character) {
 
     const text = document.createElementNS(SVG_NS, "text");
 
     text.textContent = character.text;
 
-    text.setAttribute("x", character.x);
+const special = specialCharacters[character.text];
 
-    text.setAttribute("y", character.y);
+const x = character.x + (special?.dx ?? 0);
+const y = character.y + (special?.dy ?? 0);
 
-    const horizontalPattern = /[A-Za-z0-9#()（）]/;
+text.setAttribute("x", x);
+text.setAttribute("y", y);
 
-    let className = character.class;
+if (special?.horizontal) {
+    className += " horizontalChar";
+}
 
-    if (horizontalPattern.test(character.text)) {
-        className += " horizontalChar";
-    }
+text.setAttribute("class", className);
 
-    text.setAttribute("class", className);
 
     return text;
 
