@@ -160,7 +160,7 @@ function start() {
 
  function drawPoem() {
 
-    POEM.columns.forEach(block => {
+    POEM.columns.forEach(block, blockIndex) => {
 
        console.log(block.id, block.startX); 
 
