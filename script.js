@@ -31,8 +31,8 @@ SVG文字生成
 const specialCharacters = {
 
     "#":  { horizontal: true, dx: -2, dy: -2 },
-    "？": { horizontal: true, dx: 0, dy: 0 },
-    "?":  { horizontal: true, dx: 0, dy: 0 },
+    "？": { horizontal: true, },
+    "?":  { horizontal: true, },
 
     "0": { horizontal: true, dx: -8, dy: -6 },
     "1": { horizontal: true, dx: -8, dy: -6 },
