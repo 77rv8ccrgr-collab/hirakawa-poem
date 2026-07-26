@@ -66,6 +66,7 @@ if (
     character.blockIndex === 2 &&
     character.text === "（"
 ) {
+    console.log("括弧発見", character.blockIndex);
     adjustedX -= 8;
 }
 
