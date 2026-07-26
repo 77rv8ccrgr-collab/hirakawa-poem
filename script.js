@@ -72,9 +72,6 @@ if (
 text.setAttribute("x", adjustedX);
 text.setAttribute("y", y);
 
-    text.setAttribute("x", adjustedx);
-    text.setAttribute("y", y);
-
     let className = character.class;
 
     if (special?.horizontal) {
