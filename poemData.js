@@ -118,7 +118,7 @@ const POEM = {
             
             id: "block1",
 
-    startX: 1662,
+    startX: 1790,
 
     startY: 150,
 
@@ -127,15 +127,15 @@ const POEM = {
     lineGap: 65,
 
     xPositions: [
-    1662,
-    1592,
-    1522,
-    1452,
-    1382,
-    1312,
-    1242,
-    1172,
-    1102  // 9列目（左端）
+    1790,
+    1720,
+    1650,
+    1580,
+    1510,
+    1440,
+    1370,
+    1300,
+    1230  // 9列目（左端）
 ],
 
     columns: [
@@ -165,7 +165,7 @@ const POEM = {
 {
     id: "block2",
 
-    startX: 962,
+    startX: 1090,
 
     startY: 150,
 
@@ -174,14 +174,14 @@ const POEM = {
     lineGap: 65,
 
     xPositions: [
-    962,
-892,
-822,
-752,
-682,
-612,
-542,
-472
+    1090,
+1020,
+950,
+880,
+810,
+740,
+670,
+600
 ],
 
     columns: [
@@ -209,7 +209,7 @@ const POEM = {
 {
     id: "block3",
 
-    startX: 332,
+    startX: 460,
 
     startY: 150,
 
@@ -218,6 +218,7 @@ const POEM = {
     lineGap: 65,
 
     xPositions: [
+    460,
     390,
 332,
 262,
@@ -225,8 +226,7 @@ const POEM = {
 122,
 52,
 -18,
--88,
--158
+-88
 ],
 
     columns: [
@@ -256,7 +256,7 @@ const POEM = {
 {
     id: "block4",
 
-    startX: -298,
+    startX: -228,
 
     startY: 150,
 
@@ -265,7 +265,7 @@ const POEM = {
     lineGap: 65,
 
     xPositions: [
-    -130,
+    -228,
 -298,
 -368,
 -438,
