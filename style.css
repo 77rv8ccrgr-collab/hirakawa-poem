@@ -27,10 +27,11 @@ body{
     user-select:none;
 
     font-family:
-"BIZ UDP明朝",
-"MS 明朝",
-"Yu Mincho",
-serif;
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    "MS PMincho",
+    "MS Mincho",
+    serif;
 
 }
 
@@ -259,9 +260,10 @@ serif;
     writing-mode: horizontal-tb;
 
     font-family:
-"BIZ UDP明朝",
-"MS 明朝",
-"Yu Mincho",
-serif;
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    "MS PMincho",
+    "MS Mincho",
+    serif;
    
 }
