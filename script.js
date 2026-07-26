@@ -44,7 +44,8 @@ const specialCharacters = {
     "9": { horizontal: true, dx: -16, dy: 30 },
 
     "？": { rotate: 90, dx: 19, dy: 20 },
-    "?": { rotate: 90, dx: 19, dy: 20 }
+    "?": { rotate: 90, dx: 19, dy: 20 },
+    "（": { fontSize: 36, dx: 2, dy: 3 },
 
 };
 
