@@ -64,6 +64,8 @@ const y = character.y + (special?.dy ?? 0);
 text.setAttribute("x", x);
 text.setAttribute("y", y);
 
+let className = character.class;
+
 if (special?.horizontal) {
     className += " horizontalChar";
 }
