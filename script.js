@@ -60,18 +60,18 @@ function createCharacter(character) {
     const y = character.y + (special?.dy ?? 0);
 
     let adjustedX = x;
+    let adjustedY = y;
 
 // 3ブロック目の「（」だけ少し左へ寄せる
 if (
     character.blockIndex === 2 &&
     character.text === "（"
 ) {
-    console.log("括弧発見", character.blockIndex);
-    adjustedX -= 8;
+    adjustedY -= 8;
 }
 
 text.setAttribute("x", adjustedX);
-text.setAttribute("y", y);
+text.setAttribute("y", adjustedY);
 
     let className = character.class;
 
@@ -226,6 +226,7 @@ poemSVG.appendChild(guide);
                         class: "poemChar",
 
                         blockIndex
+                        rowIndex
 
                     })
 
