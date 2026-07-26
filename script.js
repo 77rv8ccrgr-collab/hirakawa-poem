@@ -91,7 +91,7 @@ if (
     character.blockIndex === 2 &&
     character.text === "（"
 ) {
-    text.setAttribute("font-size", 36);
+
     }
 
     return text;
