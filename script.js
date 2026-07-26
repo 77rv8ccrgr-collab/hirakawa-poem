@@ -59,7 +59,20 @@ function createCharacter(character) {
     const x = character.x + (special?.dx ?? 0);
     const y = character.y + (special?.dy ?? 0);
 
-    text.setAttribute("x", x);
+    let adjustedX = x;
+
+// 3ブロック目の「（」だけ少し左へ寄せる
+if (
+    character.blockIndex === 2 &&
+    character.text === "（"
+) {
+    adjustedX -= 8;
+}
+
+text.setAttribute("x", adjustedX);
+text.setAttribute("y", y);
+
+    text.setAttribute("x", adjustedx);
     text.setAttribute("y", y);
 
     let className = character.class;
