@@ -40,7 +40,7 @@ const specialCharacters = {
     "5": { horizontal: true, dx: -14, dy: 2 },
     "6": { horizontal: true, dx: -14, dy: 2 },
     "7": { horizontal: true, dx: -14, dy: 2 },
-    "8": { horizontal: true, dx: -16, dy: 30 },
+    "8": { horizontal: true, dx: -16, dy: 25 },
     "9": { horizontal: true, dx: -16, dy: 30 },
 
     "？": { rotate: 90, dx: 19, dy: 20 },
