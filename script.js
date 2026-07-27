@@ -265,7 +265,7 @@ if (
 
 if ( blockIndex === 3 && columnIndex === 6 ) {
 
-    if (index === 2) advance += 6;
+    if (index === 2) advance += 8;
     if (index === 3) advance += 4;
     if (index === 4) advance += 2;
     if (index === 5) advance += 1;
