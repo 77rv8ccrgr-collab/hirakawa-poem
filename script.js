@@ -179,9 +179,12 @@ function start() {
 
 }
 
-function getAdvance(char, block) {
+function getAdvance(char, blockIndex, block) {
 
-     if (char === "（") {
+     if (
+        blockIndex === 2 &&
+        char === "（"
+    ) {
         return block.lineGap - 10;
     }
 
@@ -243,7 +246,7 @@ poemSVG.appendChild(guide);
 
     );
 
-    currentY += getAdvance(char, block);
+    currentY += getAdvance(char, blockIndex, block);
 
 }); 
 
