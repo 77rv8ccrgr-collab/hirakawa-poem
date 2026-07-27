@@ -54,7 +54,7 @@ function createCharacter(character) {
 
     text.textContent = character.text;
 
-    const special = specialCharacters[character.text];
+    const special = specialCharacters[character.text]?? {};
 
     const x = character.x + (special?.dx ?? 0);
     const y = character.y + (special?.dy ?? 0);
@@ -211,7 +211,23 @@ poemSVG.appendChild(guide);
 
           let currentY = block.startY;
 
-[...line].forEach((char) => {
+ const chars = [...line];
+
+// block3・3列目だけ「（（」を1つにまとめる
+if (blockIndex === 2 && columnIndex === 2) {
+
+    for (let i = 0; i < chars.length - 1; i++) {
+
+        if (chars[i] === "（" && chars[i + 1] === "（") {
+            chars.splice(i, 2, "（（");
+            break; // 今回は1か所だけ
+        }
+
+    }
+
+}
+
+chars.forEach((char) => {
 
     poemSVG.appendChild(
 
@@ -220,8 +236,8 @@ poemSVG.appendChild(guide);
             text: char,
 
             x: block.xPositions
-    ? block.xPositions[columnIndex]
-    : block.startX - columnIndex * block.columnGap,
+                ? block.xPositions[columnIndex]
+                : block.startX - columnIndex * block.columnGap,
 
             y: currentY,
 
@@ -235,7 +251,7 @@ poemSVG.appendChild(guide);
 
     currentY += getAdvance(char, blockIndex, block);
 
-}); 
+});
 
         });
 
