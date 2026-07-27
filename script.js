@@ -171,7 +171,7 @@ function start() {
 function getAdvance(char, blockIndex, block) {
 
      if (char === "（（") {
-        return block.lineGap - 4;
+        return block.lineGap - 2;
     }
 
     return block.lineGap;
