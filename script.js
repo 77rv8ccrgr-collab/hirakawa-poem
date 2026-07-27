@@ -180,6 +180,11 @@ function start() {
 }
 
 function getAdvance(char, block) {
+
+     if (char === "（") {
+        return block.lineGap - 8;
+    }
+
     return block.lineGap;
 }
 
