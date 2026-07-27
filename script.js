@@ -32,6 +32,7 @@ const specialCharacters = {
 
     "#": { horizontal: true, dx: -16, dy: 10 },
     "👣": { dy: -10 },
+    "bar": { horizontal: true, dx: 0, dy: 0 },
 
     "0": { horizontal: true, dx: -14, dy: 2 },
     "1": { horizontal: true, dx: -14, dy: 2 },
