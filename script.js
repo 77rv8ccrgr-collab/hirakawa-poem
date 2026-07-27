@@ -224,12 +224,7 @@ chars.forEach((char,index) => {
                 ? block.xPositions[columnIndex]
                 : block.startX - columnIndex * block.columnGap,
 
-            y:
-    index > 0 &&
-    chars[index - 1] === "（" &&
-    char === "（"
-        ? currentY - 22
-        : currentY,
+            y: currentY,
 
             class: "poemChar",
 
@@ -238,6 +233,14 @@ chars.forEach((char,index) => {
         })
 
     );
+
+if (
+    index > 0 &&
+    chars[index - 1] === "（" &&
+    char === "（"
+) {
+    currentY -= 22;
+}
 
     currentY += getAdvance(char, blockIndex, block);
 
