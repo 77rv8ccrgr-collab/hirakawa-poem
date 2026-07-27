@@ -223,21 +223,13 @@ poemSVG.appendChild(guide);
 
  const chars = [...line];
  let afterDoubleParen = false;
- let compensation = 0;
 
 chars.forEach((char,index) => {
 
 let drawY = currentY;
 
 if (afterDoubleParen) {
-
-    if (blockIndex === 3 && columnIndex === 6) {
-        compensation += 1.2;
-        drawY -= (22 - compensation);
-    } else {
-        drawY -= 22;
-    }
-
+    drawY -= 22;
 }
 
 if (
