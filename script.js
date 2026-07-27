@@ -54,6 +54,10 @@ function createCharacter(character) {
 
     text.textContent = character.text;
 
+    if (character.text === "（（") {
+    text.setAttribute("letter-spacing", "4");
+}
+
     const special = specialCharacters[character.text]?? {};
 
     const x = character.x + (special?.dx ?? 0);
@@ -168,14 +172,12 @@ function start() {
 
 function getAdvance(char, blockIndex, block) {
 
-     if (
-        blockIndex === 2 &&
-        char === "（"
-    ) {
-        return block.lineGap - 10;
+     if (char === "（（") {
+        return block.lineGap - 4;
     }
 
     return block.lineGap;
+
 }
 
  function drawPoem() {
