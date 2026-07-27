@@ -230,8 +230,14 @@ chars.forEach((char,index) => {
 let drawY = currentY;
 
 if (afterDoubleParen) {
-     compensation += 1.2;
-    drawY -= (22 - compensation);
+
+    if (blockIndex === 3 && columnIndex === 6) {
+        compensation += 1.2;
+        drawY -= (22 - compensation);
+    } else {
+        drawY -= 22;
+    }
+
 }
 
 if (
