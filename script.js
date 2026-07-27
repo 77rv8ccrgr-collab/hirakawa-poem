@@ -179,6 +179,10 @@ function start() {
 
 }
 
+function getAdvance(char, block) {
+    return block.lineGap;
+}
+
  function drawPoem() {
 
     POEM.columns.forEach((block, blockIndex) => {
@@ -234,7 +238,7 @@ poemSVG.appendChild(guide);
 
     );
 
-    currentY += block.lineGap;
+    currentY += getAdvance(char, block);
 
 }); 
 
