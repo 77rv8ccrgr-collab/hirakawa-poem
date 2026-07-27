@@ -55,7 +55,6 @@ function createCharacter(character) {
     text.textContent = character.text;
 
     console.log(text.getComputedTextLength());
-}
 
     const special = specialCharacters[character.text]?? {};
 
