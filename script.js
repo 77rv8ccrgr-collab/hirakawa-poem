@@ -211,7 +211,7 @@ poemSVG.appendChild(guide);
 
  const chars = [...line];
 
-chars.forEach((char) => {
+chars.forEach((char,index) => {
 
     poemSVG.appendChild(
 
@@ -223,7 +223,12 @@ chars.forEach((char) => {
                 ? block.xPositions[columnIndex]
                 : block.startX - columnIndex * block.columnGap,
 
-            y: currentY,
+            y:
+    blockIndex === 2 &&
+    columnIndex === 2 &&
+    index === 1
+        ? currentY - 6
+        : currentY,
 
             class: "poemChar",
 
