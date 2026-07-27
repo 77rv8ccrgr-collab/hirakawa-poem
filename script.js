@@ -211,8 +211,24 @@ poemSVG.appendChild(guide);
           let currentY = block.startY;
 
  const chars = [...line];
+ let afterDoubleParen = false;
 
 chars.forEach((char,index) => {
+
+let drawY = currentY;
+
+if (afterDoubleParen) {
+    drawY -= 22;
+}
+
+if (
+    index > 0 &&
+    chars[index - 1] === "（" &&
+    char === "（"
+) {
+    drawY -= 22;
+    afterDoubleParen = true;
+}
 
     poemSVG.appendChild(
 
@@ -224,7 +240,7 @@ chars.forEach((char,index) => {
                 ? block.xPositions[columnIndex]
                 : block.startX - columnIndex * block.columnGap,
 
-            y: currentY,
+            y:drawY,
 
             class: "poemChar",
 
@@ -233,14 +249,6 @@ chars.forEach((char,index) => {
         })
 
     );
-
-if (
-    index > 0 &&
-    chars[index - 1] === "（" &&
-    char === "（"
-) {
-    currentY -= 22;
-}
 
     currentY += getAdvance(char, blockIndex, block);
 
