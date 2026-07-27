@@ -261,7 +261,17 @@ if (
 
     );
 
-    currentY += getAdvance(char, blockIndex, block);
+    let advance = getAdvance(char, blockIndex, block);
+
+if (
+    blockIndex === 3 &&
+    columnIndex === 6 &&
+    index === 3
+) {
+    advance += 6;
+}
+
+currentY += advance;
 
 });
 
