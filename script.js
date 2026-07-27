@@ -211,20 +211,6 @@ poemSVG.appendChild(guide);
 
  const chars = [...line];
 
-// block3・3列目だけ「（（」を1つにまとめる
-if (blockIndex === 2 && columnIndex === 2) {
-
-    for (let i = 0; i < chars.length - 1; i++) {
-
-        if (chars[i] === "（" && chars[i + 1] === "（") {
-            chars.splice(i, 2, "（（");
-            break; // 今回は1か所だけ
-        }
-
-    }
-
-}
-
 chars.forEach((char) => {
 
     poemSVG.appendChild(
