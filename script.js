@@ -277,7 +277,7 @@ if ( blockIndex === 3 && columnIndex === 6 ) {
 
 if (blockIndex === 0 && columnIndex === 4) {
 
-    if (index === 8) advance += 6;
+    if (index === 8) advance += 12;
 
 }
 
