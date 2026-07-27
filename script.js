@@ -210,29 +210,33 @@ poemSVG.appendChild(guide);
 
         block.columns.forEach((line, columnIndex) => {
 
-            [...line].forEach((char, rowIndex) => {
+          let currentY = block.startY;
 
-                poemSVG.appendChild(
+[...line].forEach((char, rowIndex) => {
 
-                    createCharacter({
+    poemSVG.appendChild(
 
-                        text: char,
+        createCharacter({
 
-                        x: block.xPositions
+            text: char,
+
+            x: block.xPositions
     ? block.xPositions[columnIndex]
     : block.startX - columnIndex * block.columnGap,
 
-                        y: block.startY + rowIndex * block.lineGap,
+            y: currentY,
 
-                        class: "poemChar",
+            class: "poemChar",
 
-                        blockIndex
+            blockIndex
 
-                    })
+        })
 
-                );
+    );
 
-            });
+    currentY += block.lineGap;
+
+}); 
 
         });
 
