@@ -267,3 +267,8 @@ body{
     serif;
    
 }
+
+.sidewaysChar {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
