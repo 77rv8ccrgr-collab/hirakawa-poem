@@ -268,7 +268,7 @@ if (
     columnIndex === 6 &&
     index === 3
 ) {
-    advance += 8;
+    advance += 12;
 }
 
 currentY += advance;
