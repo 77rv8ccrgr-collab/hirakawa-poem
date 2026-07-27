@@ -37,7 +37,7 @@ const specialCharacters = {
     "1": { horizontal: true, dx: -14, dy: 2 },
     "2": { horizontal: true, dx: -14, dy: 2 },
     "3": { horizontal: true, dx: -14, dy: 2 },
-    "4": { horizontal: true, dx: -16, dy: 5 },
+    "4": { horizontal: true, dx: -16, dy: 8 },
     "5": { horizontal: true, dx: -14, dy: 2 },
     "6": { horizontal: true, dx: -14, dy: 2 },
     "7": { horizontal: true, dx: -14, dy: 2 },
