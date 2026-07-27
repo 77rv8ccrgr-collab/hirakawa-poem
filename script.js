@@ -54,6 +54,17 @@ function createCharacter(character) {
     const text = document.createElementNS(SVG_NS, "text");
 
     text.textContent = character.text;
+    if (character.text === "👣") {
+
+    if (character.blockIndex === 2) {
+        text.setAttribute("fill", "#7b5ea7");   // 紫
+    }
+
+    if (character.blockIndex === 3) {
+        text.setAttribute("fill", "#000000");   // 黒
+    }
+
+}
 
     const special = specialCharacters[character.text]?? {};
 
