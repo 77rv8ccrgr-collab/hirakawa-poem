@@ -63,12 +63,14 @@ function createCharacter(character) {
     let adjustedY = y;
 
 // 3ブロック目の「（」だけ少し左へ寄せる
+/*
 if (
     character.blockIndex === 2 &&
     character.text === "（"
 ) {
     adjustedX -= 10;
 }
+*/
 
 text.setAttribute("x", adjustedX);
 text.setAttribute("y", adjustedY);
@@ -224,8 +226,7 @@ poemSVG.appendChild(guide);
 
                         class: "poemChar",
 
-                        blockIndex,
-                        rowIndex
+                        blockIndex
 
                     })
 
