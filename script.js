@@ -55,7 +55,7 @@ function createCharacter(character) {
     text.textContent = character.text;
 
     if (character.text === "（（") {
-    text.setAttribute("letter-spacing", "4");
+    text.setAttribute("letter-spacing", "6");
 }
 
     const special = specialCharacters[character.text]?? {};
