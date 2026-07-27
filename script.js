@@ -43,8 +43,8 @@ const specialCharacters = {
     "8": { horizontal: true, dx: -16, dy: 25 },
     "9": { horizontal: true, dx: -16, dy: 30 },
 
-    "？": { rotate: 90, dx: 19, dy: 20 },
-    "?": { rotate: 90, dx: 19, dy: 20 },
+    "(": { sideways: true },
+"?": { sideways: true },
 
 };
 
@@ -80,6 +80,10 @@ text.setAttribute("y", adjustedY);
     if (special?.horizontal) {
         className += " horizontalChar";
     }
+
+    if (special?.sideways) {
+    className += " sidewaysChar";
+}
 
     text.setAttribute("class", className);
 
