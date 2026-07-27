@@ -67,7 +67,7 @@ if (
     character.blockIndex === 2 &&
     character.text === "（"
 ) {
-    adjustedY -= 8;
+    adjustedX -= 10;
 }
 
 text.setAttribute("x", adjustedX);
@@ -101,7 +101,6 @@ if (
     character.blockIndex === 2 &&
     character.text === "（"
 ) {
-
     }
 
     return text;
