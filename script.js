@@ -62,15 +62,6 @@ function createCharacter(character) {
     let adjustedX = x;
     let adjustedY = y;
 
-// 3ブロック目の「（」だけ少し左へ寄せる
-/*
-if (
-    character.blockIndex === 2 &&
-    character.text === "（"
-) {
-    adjustedX -= 10;
-}
-*/
 
 text.setAttribute("x", adjustedX);
 text.setAttribute("y", adjustedY);
@@ -99,14 +90,6 @@ text.setAttribute("y", adjustedY);
     if (special?.fontSize) {
         text.setAttribute("font-size", special.fontSize);
 
-    }
-
-
-// 3ブロック目の「（」だけ
-if (
-    character.blockIndex === 2 &&
-    character.text === "（"
-) {
     }
 
     return text;
@@ -228,7 +211,7 @@ poemSVG.appendChild(guide);
 
           let currentY = block.startY;
 
-[...line].forEach((char, rowIndex) => {
+[...line].forEach((char) => {
 
     poemSVG.appendChild(
 
