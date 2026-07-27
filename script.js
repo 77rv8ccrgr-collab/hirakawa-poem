@@ -54,8 +54,7 @@ function createCharacter(character) {
 
     text.textContent = character.text;
 
-    if (character.text === "（（") {
-    text.setAttribute("letter-spacing", "10");
+    console.log(text.getComputedTextLength());
 }
 
     const special = specialCharacters[character.text]?? {};
