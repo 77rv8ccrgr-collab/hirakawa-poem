@@ -227,7 +227,7 @@ chars.forEach((char,index) => {
     blockIndex === 2 &&
     columnIndex === 2 &&
     index === 1
-        ? currentY - 6
+        ? currentY - 10
         : currentY,
 
             class: "poemChar",
