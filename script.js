@@ -224,9 +224,9 @@ chars.forEach((char,index) => {
                 : block.startX - columnIndex * block.columnGap,
 
             y:
-    blockIndex === 2 &&
-    columnIndex === 2 &&
-    index === 1
+    index > 0 &&
+    chars[index - 1] === "（" &&
+    char === "（"
         ? currentY - 22
         : currentY,
 
