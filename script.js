@@ -180,19 +180,31 @@ function start() {
 
 function drawBar() {
 
-    poemSVG.appendChild(
-
+     poemSVG.appendChild(
         createCharacter({
-
-            text: "bar",
-
+            text: "b",
             x: 1498,
-            y: 700,
-
-            class: "poemChar"
-
+            y: 680,
+            class: "poemChar bar"
         })
+    );
 
+    poemSVG.appendChild(
+        createCharacter({
+            text: "a",
+            x: 1518,
+            y: 680,
+            class: "poemChar bar"
+        })
+    );
+
+    poemSVG.appendChild(
+        createCharacter({
+            text: "r",
+            x: 1538,
+            y: 680,
+            class: "poemChar bar"
+        })
     );
 
 }
