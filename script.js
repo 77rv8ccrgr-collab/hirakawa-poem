@@ -432,7 +432,15 @@ start();
 
     player.barShown = true;
 
-    return;
+player.lineIndex++;
+
+player.charIndex = 0;
+
+if (player.lineIndex < poemLines.length) {
+    await playCurrentLine();
+}
+
+return;
 
 } 
 
