@@ -433,7 +433,15 @@ start();
 
     }
 
-    player.lineIndex++;
+      player.lineIndex++;
+
+    if (player.lineIndex >= poemLines.length) {
+
+        player.state = "last";
+
+        return;
+
+    }
 
     await playCurrentLine();
 
