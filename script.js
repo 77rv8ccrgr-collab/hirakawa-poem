@@ -172,16 +172,34 @@ function start() {
     console.log("start");
 
     drawTitle();
-
     drawAuthor();
-
     drawPoem();
+    drawBar();
+
+}
+
+function drawBar() {
+
+    poemSVG.appendChild(
+
+        createCharacter({
+
+            text: "bar",
+
+            x: 420,
+            y: 580,
+
+            class: "poemChar"
+
+        })
+
+    );
 
 }
 
 function getAdvance(char, blockIndex, block) {
 
-     if (char === "（（") {
+    if (char === "（（") {
         return block.lineGap;
     }
 
@@ -189,11 +207,11 @@ function getAdvance(char, blockIndex, block) {
 
 }
 
- function drawPoem() {
+function drawPoem() {
 
     POEM.columns.forEach((block, blockIndex) => {
 
-       console.log(block.id, block.startX); 
+        console.log(block.id, block.startX);
 
         // ===== デバッグ用：ブロックの右端ガイド =====
 
