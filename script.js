@@ -478,11 +478,17 @@ return;
 
 function showSquareCircle() {
 
-    document.querySelectorAll(".square, .circle").forEach(element => {
+    const targets = document.querySelectorAll(".square, .circle");
+
+    if (targets.length === 0) return;
+
+    targets.forEach(element => {
 
         element.style.opacity = 1;
 
     });
+
+    player.state = "squareCircle";
 
 }
 
