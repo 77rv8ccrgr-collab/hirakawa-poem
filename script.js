@@ -394,15 +394,17 @@ start();
 
     if (player.state === "title") {
 
-        hideTitle();
+    hideTitle();
 
-        player.state = "reading";
+    player.state = "reading";
 
-        await playCurrentLine();
+    player.lineIndex = 0;
 
-        return;
+    await playCurrentLine();
 
-    }
+    return;
+
+}
 
     if (player.state !== "reading") return;
 
