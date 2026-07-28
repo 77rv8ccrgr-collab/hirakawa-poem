@@ -200,6 +200,10 @@ function drawAuthor() {
 
     });
 
+    titleSVG.querySelectorAll(".authorChar").forEach(text => {
+        text.style.opacity = 1;
+    });
+
 }
 
 /*
