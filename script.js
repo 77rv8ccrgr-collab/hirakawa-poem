@@ -499,9 +499,24 @@ function showSquareCircle() {
     });
 
     player.state = "squareCircle";
-    player.footstepsShown = false;
+
+player.footstepsShown = false;
 
 }
+    function showFootsteps() {
+
+    document.querySelectorAll(".footstep").forEach(element => {
+
+        element.style.opacity = 1;
+
+    });
+
+    player.state = "footsteps";
+
+}
+    
+
+
 
 
 titleScreen.addEventListener("click", nextStep);
