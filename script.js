@@ -179,6 +179,9 @@ function start() {
     drawTitle();
     drawAuthor();
     drawPoem();
+
+console.log(poemLines);
+
     drawBar();
 
 }
