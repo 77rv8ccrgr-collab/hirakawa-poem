@@ -393,6 +393,7 @@ async function playCurrentLine() {
     }
 
     player.isPlaying = false;
+    player.charIndex = 0;
 
 }
 
