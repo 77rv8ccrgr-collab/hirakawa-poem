@@ -279,25 +279,17 @@ if (
     afterDoubleParen = true;
 }
 
-    poemSVG.appendChild(
+    const charElement = createCharacter({
+    text: char,
+    x: block.xPositions
+        ? block.xPositions[columnIndex]
+        : block.startX - columnIndex * block.columnGap,
+    y: drawY,
+    class: "poemChar",
+    blockIndex
+});
 
-        createCharacter({
-
-            text: char,
-
-            x: block.xPositions
-                ? block.xPositions[columnIndex]
-                : block.startX - columnIndex * block.columnGap,
-
-            y:drawY,
-
-            class: "poemChar",
-
-            blockIndex
-
-        })
-
-    );
+poemSVG.appendChild(charElement);
 
     let advance = getAdvance(char, blockIndex, block);
 
