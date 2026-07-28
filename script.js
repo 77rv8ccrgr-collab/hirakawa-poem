@@ -18,7 +18,7 @@ const readingScreen = document.getElementById("readingScreen")
 
 const poemSVG = document.getElementById("poemSVG");
 
-const poemCharacters = [];
+const poemLines = [];
 
 /*
 
