@@ -192,7 +192,7 @@ function drawBar() {
     poemSVG.appendChild(
         createCharacter({
             text: "a",
-            x: 15740,
+            x: 1574,
             y: 680,
             class: "poemChar bar"
         })
