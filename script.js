@@ -184,10 +184,10 @@ function drawBar() {
 
         createCharacter({
 
-            text: "bar",
+            text: "b a r",
 
-            x: 1510,
-            y: 680,
+            x: 1500,
+            y: 700,
 
             class: "poemChar"
 
