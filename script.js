@@ -457,6 +457,16 @@ return;
 
     }
 
+    if (!player.footstepsShown) {
+
+    player.footstepsShown = true;
+
+    showFootsteps();
+
+    return;
+
+}
+
     return;
 
 }
