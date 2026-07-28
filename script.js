@@ -370,6 +370,28 @@ start();
 
 titleScreen.addEventListener("click", () =>{
 
+async function playCurrentLine() {
+
+    if (player.isPlaying) return;
+
+    const line = getCurrentLine();
+
+    if (!line) return;
+
+    player.isPlaying = true;
+
+    for (let i = 0; i < line.length; i++) {
+
+        line[i].style.opacity = 1;
+
+        await new Promise(resolve => setTimeout(resolve, 45));
+
+    }
+
+    player.isPlaying = false;
+
+}
+
     hideTitle();
 
 });
