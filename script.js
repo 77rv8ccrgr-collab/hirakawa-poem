@@ -409,21 +409,21 @@ start();
     if (player.state !== "reading") return;
 
     // 5行目のあとだけ bar を出す
-    if (player.lineIndex === BAR_LINE && !player.barShown) {
+   if (
+    player.lineIndex === BAR_LINE &&
+    !player.barShown &&
+    player.charIndex === 0
+) {
 
-        const bars = document.querySelectorAll(".bar");
+    document.querySelectorAll(".bar").forEach(bar => {
+        bar.style.opacity = 1;
+    });
 
-        bars.forEach(bar => {
+    player.barShown = true;
 
-            bar.style.opacity = 1;
+    return;
 
-        });
-
-        player.barShown = true;
-
-        return;
-
-    }
+} 
 
     // 最終行まで来たら停止
     if (player.lineIndex >= poemLines.length - 1) {
