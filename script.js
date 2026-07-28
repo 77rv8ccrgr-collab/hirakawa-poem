@@ -187,7 +187,7 @@ function drawBar() {
             text: "bar",
 
             x: 1510,
-            y: 580,
+            y: 680,
 
             class: "poemChar"
 
