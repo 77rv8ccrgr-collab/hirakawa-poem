@@ -255,6 +255,8 @@ poemSVG.appendChild(guide);
 
         block.columns.forEach((line, columnIndex) => {
 
+            const currentLine = [];
+
           let currentY = block.startY;
 
  const chars = [...line];
