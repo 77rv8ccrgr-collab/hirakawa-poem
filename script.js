@@ -211,32 +211,31 @@ console.log(poemLines);
 
 function drawBar() {
 
-     poemSVG.appendChild(
-        createCharacter({
-            text: "b",
-            x: 1496,
-            y: 695,
-            class: "poemChar bar"
-        })
-    );
+    const b = createCharacter({
+    text: "b",
+    x: 1496,
+    y: 695,
+    class: "poemChar bar"
+});
 
-    poemSVG.appendChild(
-        createCharacter({
-            text: "a",
-            x: 1544,
-            y: 695,
-            class: "poemChar bar"
-        })
-    );
+poemSVG.appendChild(b);
 
-    poemSVG.appendChild(
-        createCharacter({
-            text: "r",
-            x: 1590,
-            y: 695,
-            class: "poemChar bar"
-        })
-    );
+    const a = createCharacter({
+    text: "a",
+    x: 1544,
+    y: 695,
+    class: "poemChar bar"
+});
+
+    const r = createCharacter({
+    text: "r",
+    x: 1590,
+    y: 695,
+    class: "poemChar bar"
+});
+
+poemSVG.appendChild(r);
+   
 
 }
 
