@@ -365,11 +365,6 @@ titleScreen.classList.remove("active");
 readingScreen.classList.add("active");
 
 }
-
-start();
-
-titleScreen.addEventListener("click", () =>{
-
 async function playCurrentLine() {
 
     if (player.isPlaying) return;
@@ -392,6 +387,59 @@ async function playCurrentLine() {
 
 }
 
-    hideTitle();
+start();
 
-});
+
+
+    async function nextStep() {
+
+    if (player.state === "title") {
+
+        hideTitle();
+
+        player.state = "reading";
+
+        await playCurrentLine();
+
+        return;
+
+    }
+
+    if (player.state !== "reading") return;
+
+    // 5行目のあとだけ bar を出す
+    if (player.lineIndex === BAR_LINE && !player.barShown) {
+
+        const bars = document.querySelectorAll(".bar");
+
+        bars.forEach(bar => {
+
+            bar.style.opacity = 1;
+
+        });
+
+        player.barShown = true;
+
+        return;
+
+    }
+
+    // 最終行まで来たら停止
+    if (player.lineIndex >= poemLines.length - 1) {
+
+        player.state = "last";
+
+        return;
+
+    }
+
+    player.lineIndex++;
+
+    await playCurrentLine();
+
+}
+
+
+titleScreen.addEventListener("click", nextStep);
+
+readingScreen.addEventListener("click", nextStep);
