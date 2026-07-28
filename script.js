@@ -445,7 +445,7 @@ return;
 } 
 
     // 最終行まで来たら停止
-    if (player.lineIndex >= poemLines.length - 1) {
+    if (player.state === "last") {
 
     if (!player.squareCircleShown) {
 
@@ -456,8 +456,6 @@ return;
         return;
 
     }
-
-    player.state = "last";
 
     return;
 
