@@ -184,7 +184,7 @@ function drawBar() {
         createCharacter({
             text: "b",
             x: 1498,
-            y: 780,
+            y: 700,
             class: "poemChar bar"
         })
     );
@@ -193,7 +193,7 @@ function drawBar() {
         createCharacter({
             text: "a",
             x: 1542,
-            y: 780,
+            y: 700,
             class: "poemChar bar"
         })
     );
@@ -202,7 +202,7 @@ function drawBar() {
         createCharacter({
             text: "r",
             x: 1586,
-            y: 780,
+            y: 700,
             class: "poemChar bar"
         })
     );
