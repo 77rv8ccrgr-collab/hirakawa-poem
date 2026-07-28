@@ -456,6 +456,7 @@ start();
 }
 
       player.lineIndex++;
+      player.charIndex = 0;
 
     if (player.lineIndex >= poemLines.length) {
 
