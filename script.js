@@ -510,6 +510,13 @@ player.footstepsShown = false;
 
         element.style.opacity = 1;
         element.classList.add("walking");
+        element.style.transform = "translateX(-250px)";
+
+requestAnimationFrame(() => {
+
+    element.style.transform = "translateX(0)";
+
+});
 
     });
 
