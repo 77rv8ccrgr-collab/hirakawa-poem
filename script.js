@@ -428,11 +428,21 @@ start();
     // 最終行まで来たら停止
     if (player.lineIndex >= poemLines.length - 1) {
 
-        player.state = "last";
+    if (!player.squareCircleShown) {
+
+        player.squareCircleShown = true;
+
+        showSquareCircle();
 
         return;
 
     }
+
+    player.state = "last";
+
+    return;
+
+}
 
       player.lineIndex++;
 
@@ -445,6 +455,16 @@ start();
     }
 
     await playCurrentLine();
+
+}
+
+function showSquareCircle() {
+
+    document.querySelectorAll(".square, .circle").forEach(element => {
+
+        element.style.opacity = 1;
+
+    });
 
 }
 
