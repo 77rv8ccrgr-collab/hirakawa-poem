@@ -20,6 +20,30 @@ const poemSVG = document.getElementById("poemSVG");
 
 const poemLines = [];
 
+const player = {
+
+    lineIndex: 0,
+    charIndex: 0,
+
+    state: "title",
+
+    isPlaying: false,
+
+    barShown: false,
+
+    squareCircleShown: false,
+
+};
+
+const BAR_LINE = 4;                    // 5行目
+const LAST_LINE = poemLines.length - 1;
+
+function getCurrentLine() {
+
+    return poemLines[player.lineIndex];
+
+}
+
 /*
 
 ---------------------------------------------------------
