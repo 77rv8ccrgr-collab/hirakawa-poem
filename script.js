@@ -221,6 +221,7 @@ function start() {
     drawPoem();
 
 console.log(poemLines);
+console.log(titleSVG.children.length);
 
     drawBar();
 
