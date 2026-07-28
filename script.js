@@ -509,6 +509,7 @@ player.footstepsShown = false;
     document.querySelectorAll(".footstep").forEach(element => {
 
         element.style.opacity = 1;
+        element.classList.add("walking");
 
     });
 
