@@ -321,7 +321,7 @@ if (
         ? block.xPositions[columnIndex]
         : block.startX - columnIndex * block.columnGap,
     y: drawY,
-    class: "poemChar footstep",
+    class: "poemChar",
     blockIndex
 });
 
