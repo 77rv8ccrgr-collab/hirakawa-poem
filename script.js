@@ -137,7 +137,8 @@ if (
     character.class &&
     (
         character.class.includes("square") ||
-        character.class.includes("circle")
+        character.class.includes("circle") ||
+        character.class.includes("footstep")
     )
 ) {
     text.style.opacity = 0;
