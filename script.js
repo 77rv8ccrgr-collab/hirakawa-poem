@@ -188,6 +188,8 @@ function drawTitle() {
 
 function drawAuthor() {
 
+    console.log(AUTHOR.characters);
+
     AUTHOR.characters.forEach(character => {
 
         titleSVG.appendChild(
