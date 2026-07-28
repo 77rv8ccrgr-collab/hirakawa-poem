@@ -108,7 +108,6 @@ text.setAttribute("y", adjustedY);
     }
 
 text.style.opacity = 0;
-poemCharacters.push(text);
 
     return text;
 
