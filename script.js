@@ -445,7 +445,7 @@ return;
 } 
 
     // 最終行まで来たら停止
-    if (player.state === "last") {
+    if (player.state === "last"|| player.state === "squareCircle") {
 
     if (!player.squareCircleShown) {
 
