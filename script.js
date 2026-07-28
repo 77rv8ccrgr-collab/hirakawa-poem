@@ -506,7 +506,7 @@ player.footstepsShown = false;
 }
     function showFootsteps() {
 
-    document.querySelectorAll(".footstep").forEach(element => {
+    document.querySelectorAll(".footstep").forEach((element, index) => {
 
         element.style.opacity = 1;
         element.classList.add("walking");
