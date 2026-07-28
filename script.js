@@ -170,6 +170,10 @@ function drawTitle() {
 
     });
 
+    titleSVG.querySelectorAll("text").forEach(text => {
+    text.style.opacity = 1;
+});
+
 }
 
 /*
