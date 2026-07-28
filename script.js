@@ -318,6 +318,8 @@ currentY += advance;
 
 });
 
+poemLines.push(currentLine);
+
         });
 
     });
