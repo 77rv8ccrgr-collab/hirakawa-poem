@@ -415,6 +415,8 @@ start();
 
     async function nextStep() {
 
+        console.log("state =", player.state);
+
     if (player.state === "title") {
 
     hideTitle();
