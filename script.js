@@ -184,7 +184,7 @@ function drawBar() {
         createCharacter({
             text: "b",
             x: 1498,
-            y: 680,
+            y: 780,
             class: "poemChar bar"
         })
     );
@@ -192,8 +192,8 @@ function drawBar() {
     poemSVG.appendChild(
         createCharacter({
             text: "a",
-            x: 1540,
-            y: 680,
+            x: 1542,
+            y: 780,
             class: "poemChar bar"
         })
     );
@@ -201,8 +201,8 @@ function drawBar() {
     poemSVG.appendChild(
         createCharacter({
             text: "r",
-            x: 1582,
-            y: 680,
+            x: 1586,
+            y: 780,
             class: "poemChar bar"
         })
     );
