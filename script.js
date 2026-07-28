@@ -133,6 +133,16 @@ text.setAttribute("y", adjustedY);
 
 text.style.opacity = 0;
 
+if (
+    character.class &&
+    (
+        character.class.includes("square") ||
+        character.class.includes("circle")
+    )
+) {
+    text.style.opacity = 0;
+}
+
     return text;
 
 }
