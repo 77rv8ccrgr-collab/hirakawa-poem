@@ -280,3 +280,9 @@ body{
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
+
+.walking {
+
+    transition: transform 1.8s linear;
+
+}
