@@ -489,6 +489,7 @@ function showSquareCircle() {
     });
 
     player.state = "squareCircle";
+    player.footstepsShown = false;
 
 }
 
