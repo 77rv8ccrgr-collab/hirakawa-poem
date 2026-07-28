@@ -184,7 +184,7 @@ function drawBar() {
 
         createCharacter({
 
-            text: "b a r",
+            text: "bar",
 
             x: 1500,
             y: 700,
