@@ -429,7 +429,13 @@ start();
 
 }
 
-    if (player.state !== "reading") return;
+   if (
+    player.state !== "reading" &&
+    player.state !== "last" &&
+    player.state !== "squareCircle"
+) {
+    return;
+}
 
     // 5行目のあとだけ bar を出す
    if (
