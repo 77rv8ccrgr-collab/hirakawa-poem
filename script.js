@@ -512,11 +512,15 @@ player.footstepsShown = false;
         element.classList.add("walking");
         element.style.transform = "translateX(-250px)";
 
-requestAnimationFrame(() => {
+setTimeout(() => {
 
-    element.style.transform = "translateX(0)";
+    requestAnimationFrame(() => {
 
-});
+        element.style.transform = "translateX(0)";
+
+    });
+
+}, index * 150);
 
     });
 
