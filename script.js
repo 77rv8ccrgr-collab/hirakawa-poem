@@ -291,6 +291,8 @@ if (
 
 poemSVG.appendChild(charElement);
 
+currentLine.push(charElement);
+
     let advance = getAdvance(char, blockIndex, block);
 
 if ( blockIndex === 3 && columnIndex === 6 ) {
