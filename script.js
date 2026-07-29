@@ -533,7 +533,9 @@ player.footstepsShown = false;
 
         element.style.opacity = 1;
         element.classList.add("walking");
-        element.style.transform = "translateX(-250px)";
+        const startX = -150 - Math.random() * 180;
+
+element.style.transform = `translateX(${startX}px)`;
 
 setTimeout(() => {
 
