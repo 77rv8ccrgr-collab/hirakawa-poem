@@ -537,6 +537,8 @@ player.footstepsShown = false;
 
 element.style.transform = `translateX(${startX}px)`;
 
+const delay = index * 120 + Math.random() * 250;
+
 setTimeout(() => {
 
     requestAnimationFrame(() => {
@@ -545,7 +547,10 @@ setTimeout(() => {
 
     });
 
-}, index * 150);
+}, 
+const delay = index * 120 + Math.random() * 250;
+
+}, delay);
 
     });
 
