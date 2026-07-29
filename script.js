@@ -332,7 +332,11 @@ if (
         ? block.xPositions[columnIndex]
         : block.startX - columnIndex * block.columnGap,
     y: drawY,
-    class: "poemChar",
+    class:
+    char === "■" ? "poemChar square" :
+    char === "●" ? "poemChar circle" :
+    char === "👣" ? "poemChar footstep" :
+    "poemChar",
     blockIndex
 });
 
