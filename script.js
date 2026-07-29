@@ -548,7 +548,6 @@ setTimeout(() => {
     });
 
 }, 
-const delay = index * 120 + Math.random() * 250;
 
 }, delay);
 
