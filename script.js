@@ -563,7 +563,19 @@ setTimeout(() => {
 
 }
     
+function fadePoem() {
 
+    document.querySelectorAll(".poemChar, .bar").forEach(element => {
+
+        element.style.transition = "opacity 1.5s ease";
+
+        element.style.opacity = 0;
+
+    });
+
+    player.state = "fadePoem";
+
+}
 
 
 
