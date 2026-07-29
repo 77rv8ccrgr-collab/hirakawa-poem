@@ -249,6 +249,8 @@ poemSVG.appendChild(b);
     class: "poemChar bar"
 });
 
+poemSVG.appendChild(a);
+
     const r = createCharacter({
     text: "r",
     x: 1590,
