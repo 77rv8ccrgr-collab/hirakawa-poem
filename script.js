@@ -421,7 +421,15 @@ start();
 
         console.log("state =", player.state);
 
-    if (player.state === "title") {
+    if (player.state === "footsteps") {
+
+    fadePoem();
+
+    return;
+
+}
+    
+        if (player.state === "title") {
 
     hideTitle();
 
