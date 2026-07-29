@@ -413,6 +413,19 @@ async function playCurrentLine() {
     player.isPlaying = false;
     player.charIndex = 0;
 
+    if (
+    player.lineIndex === BAR_LINE &&
+    !player.barShown
+) {
+
+    document.querySelectorAll(".bar").forEach(bar => {
+        bar.style.opacity = 1;
+    });
+
+    player.barShown = true;
+
+}
+
 }
 
 start();
