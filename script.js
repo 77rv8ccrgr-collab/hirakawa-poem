@@ -466,29 +466,6 @@ start();
     return;
 }
 
-    // 5行目のあとだけ bar を出す
-   if (
-    player.lineIndex === BAR_LINE &&
-    !player.barShown &&
-    player.charIndex === 0
-) {
-
-    document.querySelectorAll(".bar").forEach(bar => {
-        bar.style.opacity = 1;
-    });
-
-    player.barShown = true;
-
-player.lineIndex++;
-
-player.charIndex = 0;
-
-if (player.lineIndex < poemLines.length) {
-    await playCurrentLine();
-}
-
-return;
-
 } 
 
     // 最終行まで来たら停止
