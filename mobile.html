@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+
+    name="viewport"
+
+    content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+
+<title>‐■ど（うしろ■#、</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="app">
+
+    <!--==============================-->
+
+    <!-- TITLE -->
+
+    <!--==============================-->
+
+    <section
+
+        id="titleScreen"
+
+        class="screen active">
+
+        <svg
+
+            id="titleSVG"
+
+            viewBox="0 0 1080 1920"
+
+            preserveAspectRatio="xMidYMid meet">
+
+            <!--
+
+                タイトル画面は
+
+                script.jsから
+
+                一文字ずつ生成する。
+
+                HTMLには
+
+                一切文字を書かない。
+
+                余白・字間・位置は
+
+                全てSVG座標で固定。
+
+            -->
+
+        </svg>
+
+    </section>
+
+    <!--==============================-->
+
+    <!-- READING -->
+
+    <!--==============================-->
+
+    <section
+
+        id="readingScreen"
+
+        class="screen">
+
+        <div id="camera">
+
+           <svg
+
+                id="poemSVG"
+
+                viewBox="0 0 1080 1920"
+
+                preserveAspectRatio="xMidYMid meet">
+
+                <!--
+
+                    詩本文
+
+                    script.jsが
+
+                    SVGへ
+
+                    一文字ずつ描画。
+
+                -->
+
+            </svg>
+
+        </div>
+
+    </section>
+
+    <!--==============================-->
+
+    <!-- EFFECT LAYERS -->
+
+    <!--==============================-->
+
+    <div id="barLayer"></div>
+
+    <div id="symbolLayer"></div>
+
+    <div id="footLayer"></div>
+
+    <div id="fadeLayer"></div>
+
+</div>
+
+<script src="poemData.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
