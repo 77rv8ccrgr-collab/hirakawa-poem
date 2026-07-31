@@ -282,13 +282,9 @@ body{
 
 .sidewaysChar {
 
-    writing-mode: horizontal-tb;
+    writing-mode: vertical-rl;
 
     text-orientation: mixed;
-
-    text-anchor: middle;
-
-    dominant-baseline: central;
 
 }
 
