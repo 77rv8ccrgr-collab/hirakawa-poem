@@ -339,6 +339,7 @@ if (
     char === "●" ? "poemChar circle" :
     char === "👣" ? "poemChar footstep" :
     char === "（" ? "poemChar paren" :
+    char === "）" ? "poemChar paren" :
     "poemChar",
     blockIndex
 });
