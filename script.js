@@ -121,7 +121,11 @@ text.setAttribute("y", adjustedY);
 
     text.setAttribute("class", className);
 
-if (character.text === "（" || character.text === "）") {
+if (
+    typeof IS_MOBILE_VERSION !== "undefined" &&
+    IS_MOBILE_VERSION &&
+    (character.text === "（" || character.text === "）")
+) {
 
     text.setAttribute(
         "transform",
