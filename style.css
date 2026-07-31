@@ -253,6 +253,10 @@ body{
 
 }
 
+.paren {
+    text-orientation: mixed;
+}
+
 .horizontalChar {
 
     font-size: 42px;
