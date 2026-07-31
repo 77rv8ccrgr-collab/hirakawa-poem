@@ -1,0 +1,1 @@
+const IS_MOBILE_VERSION = true;
