@@ -107,6 +107,10 @@ text.setAttribute("y", adjustedY);
 
     let className = character.class;
 
+    if (character.text === "（" || character.text === "）") {
+    className += " sidewaysChar";
+}
+
     if (special?.horizontal) {
         className += " horizontalChar";
     }
