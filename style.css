@@ -281,8 +281,15 @@ body{
 }
 
 .sidewaysChar {
-    writing-mode: vertical-rl;
+
+    writing-mode: horizontal-tb;
+
     text-orientation: mixed;
+
+    text-anchor: middle;
+
+    dominant-baseline: central;
+
 }
 
 .walking {
