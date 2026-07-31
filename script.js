@@ -121,6 +121,15 @@ text.setAttribute("y", adjustedY);
 
     text.setAttribute("class", className);
 
+if (character.text === "（" || character.text === "）") {
+
+    text.setAttribute(
+        "transform",
+        `rotate(90 ${x} ${y})`
+    );
+
+}
+
     // 回転（必要な文字だけ）
     if (special?.rotate) {
         text.setAttribute(
