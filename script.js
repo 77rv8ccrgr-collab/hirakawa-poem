@@ -76,7 +76,7 @@ const specialCharacters = {
    
 　　"?": { sideways: true },
 
-/*
+
 　　"ー": { rotate: 90 },
 
 "、": { rotate: 0, dx: 28, dy: -20  },
@@ -85,7 +85,7 @@ const specialCharacters = {
 
 "「": { rotate: 90 },
 "」": { rotate: 90 },
-*/
+
 
 };
 */
