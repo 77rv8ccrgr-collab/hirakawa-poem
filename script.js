@@ -76,6 +76,15 @@ const specialCharacters = {
    
 　　"?": { sideways: true },
 
+　　"―": { rotate: -90 },
+
+"、": { rotate: -90 },
+
+"。": { rotate: -90 },
+
+"「": { rotate: -90 },
+"」": { rotate: -90 },
+
 };
 
 function createCharacter(character) {
