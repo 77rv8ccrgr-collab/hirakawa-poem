@@ -44,9 +44,9 @@ const TITLE = {
 
         { text: "︵", x: 1790, y: 705, class: "titleChar" },
 
-        { text: "#", x: 1790, y: 775, class: "titleChar" },
+        { text: "#", x: 1788, y: 775, class: "titleChar" },
 
-        { text: "、", x: 1790, y: 845, class: "titleChar" }
+        { text: "、", x: 1796, y: 845, class: "titleChar" }
 
     ]
 
