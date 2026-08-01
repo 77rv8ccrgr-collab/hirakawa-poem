@@ -129,7 +129,7 @@ if (
 
     text.setAttribute(
     "transform",
-    `translate(0 10) rotate(90 ${x} ${y})`
+    `rotate(90 ${x} ${y}) translate(0 10)`
 );
 
 }
