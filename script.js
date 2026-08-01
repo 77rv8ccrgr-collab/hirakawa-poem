@@ -101,6 +101,15 @@ function createCharacter(character) {
     let adjustedX = x;
     let adjustedY = y;
 
+    if (
+    typeof IS_MOBILE_VERSION !== "undefined" &&
+    IS_MOBILE_VERSION &&
+    (character.text === "（" || character.text === "）")
+) {
+    adjustedX += 0;
+    adjustedY += 20;
+}
+
 
 text.setAttribute("x", adjustedX);
 text.setAttribute("y", adjustedY);
