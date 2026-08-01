@@ -128,9 +128,9 @@ if (
 ) {
 
     text.setAttribute(
-        "transform",
-        `rotate(90 ${x} ${y})`
-    );
+    "transform",
+    `translate(0 10) rotate(90 ${x} ${y})`
+);
 
 }
 
