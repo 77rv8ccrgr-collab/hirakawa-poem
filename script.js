@@ -106,8 +106,8 @@ function createCharacter(character) {
     IS_MOBILE_VERSION &&
     (character.text === "（" || character.text === "）")
 ) {
-    adjustedX += 14;
-    adjustedY += 0;
+    adjustedX += 12;
+    adjustedY += -20;
 }
 
 
