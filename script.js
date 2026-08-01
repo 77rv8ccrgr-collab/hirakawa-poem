@@ -529,11 +529,7 @@ start();
 
     player.footstepsShown = true;
 
-    showFootsteps();
-
-    return;
-
-}
+    showFootsteps(
 
     return;
 
@@ -579,7 +575,7 @@ player.footstepsShown = false;
         element.classList.add("walking");
         const startX = -150 - Math.random() * 180;
 
-element.style.transform = `translateX(${startX}px)`;
+element.style.transform = `rotate(-90deg) translateX(${startX}px)`;
 
 const delay = index * 120 + Math.random() * 250;
 
@@ -587,7 +583,7 @@ setTimeout(() => {
 
     requestAnimationFrame(() => {
 
-        element.style.transform = "translateX(0)";
+        element.style.transform = "rotate(-90deg) translateX(0)";
 
     });
 
