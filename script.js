@@ -57,7 +57,7 @@ SVG文字生成
 const specialCharacters = {
 
     "#": { horizontal: true, dx: -16, dy: 10 },
-    "👣": { rotate: -90, dx: -26, dy: 0 },
+    "👣": { rotate: -90, dx: -22, dy: 6 },
     "bar": { horizontal: true, dx: 0, dy: 0 },
 
     "0": { horizontal: true, dx: -14, dy: 2 },
