@@ -138,7 +138,7 @@ if (
 
     text.setAttribute(
     "transform",
-    `rotate(90 ${x} ${y})`
+    `rotate(90 ${adjustedX} ${adjustedY})`
 );
 
 }
