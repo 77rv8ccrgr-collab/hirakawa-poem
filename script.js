@@ -132,7 +132,7 @@ if (
         `rotate(90 ${x +40 } ${y})`
     );
 
-    text.setAttribute("dy", "12");
+    text.setAttribute("dy", "18");
 
 }
 
