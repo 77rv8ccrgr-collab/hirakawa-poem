@@ -132,6 +132,8 @@ if (
         `rotate(90 ${x} ${y})`
     );
 
+    text.setAttribute("dy", "12");
+
 }
 
     // 回転（必要な文字だけ）
