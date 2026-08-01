@@ -103,6 +103,7 @@ function createCharacter(character) {
     let adjustedX = x;
     let adjustedY = y;
 
+    /*
     if (
     typeof IS_MOBILE_VERSION !== "undefined" &&
     IS_MOBILE_VERSION &&
@@ -111,7 +112,7 @@ function createCharacter(character) {
     adjustedX += 12;
     adjustedY += -20;
 }
-
+*/
 
 text.setAttribute("x", adjustedX);
 text.setAttribute("y", adjustedY);
