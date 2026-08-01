@@ -96,10 +96,10 @@ const specialCharacters = {
 
 "、": { rotate: 0, dx: 28, dy: -16  },
 
-"。": { rotate: -90, dx: 24, dy: 22  },
+"。": { rotate: -90, dx: 0, dy: 0  },
 
-"「": { rotate: 90 },
-"」": { rotate: 90 },
+"「": { rotate: 90, dx: 34, dy: 30   },
+"」": { rotate: 90, dx: 26, dy: 26   },
 
 };
 
