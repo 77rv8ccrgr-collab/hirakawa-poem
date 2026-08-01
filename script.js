@@ -130,6 +130,7 @@ text.setAttribute("y", adjustedY);
 
     text.setAttribute("class", className);
 
+   /*
 if (
     typeof IS_MOBILE_VERSION !== "undefined" &&
     IS_MOBILE_VERSION &&
@@ -142,6 +143,8 @@ if (
 );
 
 }
+
+*/
 
     // 回転（必要な文字だけ）
     if (special?.rotate) {
