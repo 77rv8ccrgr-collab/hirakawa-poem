@@ -53,7 +53,7 @@ SVG文字生成
 ---------------------------------------------------------
 
 */
-
+/*
 const specialCharacters = {
 
     "#": { horizontal: true, dx: -16, dy: 10 },
@@ -88,6 +88,7 @@ const specialCharacters = {
 */
 
 };
+*/
 
 function createCharacter(character) {
 
