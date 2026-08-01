@@ -71,8 +71,8 @@ const specialCharacters = {
     "8": { horizontal: true, dx: -16, dy: 25 },
     "9": { horizontal: true, dx: -16, dy: 30 },
 
-    "（": { rotate: 90, dx: 18, dy: 22 },
-　　"）": { rotate: 90, dx: 18, dy: 22 },
+    "（": { rotate: 90, dx: 24, dy: 22 },
+　　"）": { rotate: 90, dx: 24, dy: 22 },
    
 　　"?": { sideways: true },
 
