@@ -129,7 +129,7 @@ if (
 
     text.setAttribute(
         "transform",
-        `rotate(90 ${x} ${y})`
+        `rotate(90 ${x +40 } ${y})`
     );
 
     text.setAttribute("dy", "12");
