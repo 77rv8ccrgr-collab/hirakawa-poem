@@ -73,7 +73,7 @@ const AUTHOR = {
 const specialCharacters = {
 
     "#": { horizontal: true, dx: -16, dy: 10 },
-    "👣": { rotate: -90, dx: -20, dy: 18 },
+    "👣": { dy: -10 },
     "bar": { horizontal: true, dx: 0, dy: 0 },
 
     "0": { horizontal: true, dx: -14, dy: 2 },
@@ -86,22 +86,9 @@ const specialCharacters = {
     "7": { horizontal: true, dx: -14, dy: 2 },
     "8": { horizontal: true, dx: -16, dy: 25 },
     "9": { horizontal: true, dx: -16, dy: 30 },
-
-    "（": { rotate: 90, dx: 24, dy: 22 },
-　　"）": { rotate: 90, dx: 24, dy: 22 },
    
 　　"?": { sideways: true },
 
-/*
-　　"ー": { rotate: 90 },
-
-"、": { rotate: 0, dx: 28, dy: -20  },
-
-"。": { rotate: -90, dx: 24, dy: 22  },
-
-"「": { rotate: 90 },
-"」": { rotate: 90 },
-*/
 
 };
 
