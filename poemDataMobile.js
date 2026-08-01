@@ -92,9 +92,9 @@ const specialCharacters = {
    
 　　"?": { sideways: true },
 
-　　"－": { rotate: 90 },
+　　"－": { rotate: 90, dx: 28, dy: -22 },
 
-"、": { rotate: 0, dx: 28, dy: -8  },
+"、": { rotate: 0, dx: 28, dy: -22  },
 
 "。": { rotate: -90, dx: -20, dy: 0  },
 
