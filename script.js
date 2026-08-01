@@ -76,14 +76,16 @@ const specialCharacters = {
    
 　　"?": { sideways: true },
 
-　　"ー": { rotate: -90 },
+/*
+　　"ー": { rotate: 90 },
 
-"、": { rotate: 0, dx: 24, dy: 22  },
+"、": { rotate: 0, dx: 28, dy: -20  },
 
 "。": { rotate: -90, dx: 24, dy: 22  },
 
 "「": { rotate: 90 },
 "」": { rotate: 90 },
+*/
 
 };
 
