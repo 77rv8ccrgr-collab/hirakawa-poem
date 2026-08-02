@@ -559,13 +559,13 @@ console.log(element.getAttribute("transform"));
 
         element.style.opacity = 1;
 
-        element.classList.add("walking");
-
         const startX =
             -150 - Math.random() * 180;
 
         element.style.transform =
             `translateX(${startX}px)`;
+
+        element.classList.add("walking");    
 
         const delay =
             index * 120 + Math.random() * 250;
