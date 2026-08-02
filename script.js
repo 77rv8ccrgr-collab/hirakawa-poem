@@ -537,6 +537,22 @@ async function nextStep() {
 
     }
 
+     // 次の行へ
+    player.lineIndex++;
+    player.charIndex = 0;
+
+    // 全行表示後
+    if (player.lineIndex >= poemLines.length) {
+
+        player.state = "last";
+
+        return;
+
+    }
+
+    await playCurrentLine();
+
+}
 
 
 function showSquareCircle() {
