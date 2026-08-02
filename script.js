@@ -476,81 +476,68 @@ async function playCurrentLine() {
 
 start();
 
+async function nextStep() {
 
+    console.log("state =", player.state);
 
-    async function nextStep() {
+    // タイトル画面
+    if (player.state === "title") {
 
-        console.log("state =", player.state);
+        hideTitle();
 
+        player.state = "reading";
+
+        player.lineIndex = 0;
+
+        await playCurrentLine();
+
+        return;
+    }
+
+    // 👣表示後
     if (player.state === "footsteps") {
 
-    fadePoem();
+        fadePoem();
 
-    return;
+        return;
+    }
 
-}
-    
-        if (player.state === "title") {
+    // □●表示後
+    if (player.state === "squareCircle") {
 
-    hideTitle();
+        if (!player.footstepsShown) {
 
-    player.state = "reading";
+            player.footstepsShown = true;
 
-    player.lineIndex = 0;
+            showFootsteps();
 
-    await playCurrentLine();
+        }
 
-    return;
+        return;
+    }
 
-}
+    // 最終行まで表示済み
+    if (player.state === "last") {
 
-   if (
-    player.state !== "reading" &&
-    player.state !== "last" &&
-    player.state !== "squareCircle"
-) {
-    return;
-}
+        if (!player.squareCircleShown) {
 
-    // 最終行まで来たら停止
-    if (player.state === "last"|| player.state === "squareCircle") {
+            player.squareCircleShown = true;
 
-    if (!player.squareCircleShown) {
+            showSquareCircle();
 
-        player.squareCircleShown = true;
+        }
 
-        showSquareCircle();
+        return;
+    }
+
+    // 読み進め中以外は無視
+    if (player.state !== "reading") {
 
         return;
 
     }
 
-    if (!player.footstepsShown) {
 
-    player.footstepsShown = true;
-
-    showFootsteps();
-
-    return;
-
-} //
-
-      player.lineIndex++;
-      player.charIndex = 0;
-
-    if (player.lineIndex >= poemLines.length) {
-
-        player.state = "last";
-
-        return;
-
-    }
-
-    await playCurrentLine();
-
-}
-
-}
 
 function showSquareCircle() {
 
