@@ -565,8 +565,22 @@ console.log(element.getAttribute("transform"));
         const startX =
             -150 - Math.random() * 180;
 
-        element.style.transform =
-            `translateX(${startX}px)`;
+        if (IS_MOBILE_VERSION) {
+
+    const x = element.dataset.x;
+    const y = element.dataset.y;
+
+    element.setAttribute(
+        "transform",
+        `translate(${startX} 0) rotate(-90 ${x} ${y})`
+    );
+
+} else {
+
+    element.style.transform =
+        `translateX(${startX}px)`;
+
+}
 
         element.classList.add("walking");    
 
@@ -577,8 +591,22 @@ console.log(element.getAttribute("transform"));
 
             requestAnimationFrame(() => {
 
-                element.style.transform =
-                    "translateX(0)";
+                if (IS_MOBILE_VERSION) {
+
+    const x = element.dataset.x;
+    const y = element.dataset.y;
+
+    element.setAttribute(
+        "transform",
+        `translate(0 0) rotate(-90 ${x} ${y})`
+    );
+
+} else {
+
+    element.style.transform =
+        "translateX(0)";
+
+}
 
             });
 
