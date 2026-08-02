@@ -529,7 +529,7 @@ start();
 
     player.footstepsShown = true;
 
-    showFootsteps(
+    showFootsteps();
 
     return;
 
