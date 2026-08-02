@@ -117,6 +117,9 @@ function createCharacter(character) {
             text.setAttribute("fill", "#000000");
         }
 
+        text.dataset.x = x;
+    text.dataset.y = y;
+
     }
 
     const hiddenClasses = [
