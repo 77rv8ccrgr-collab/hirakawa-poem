@@ -550,6 +550,8 @@ start();
 
 }
 
+}
+
 function showSquareCircle() {
 
     const targets = document.querySelectorAll(".square, .circle");
