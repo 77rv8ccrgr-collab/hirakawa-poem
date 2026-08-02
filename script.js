@@ -555,6 +555,8 @@ function showFootsteps() {
 
     footsteps.forEach((element, index) => {
 
+console.log(element.getAttribute("transform"));
+
         element.style.opacity = 1;
 
         element.classList.add("walking");
