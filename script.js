@@ -563,7 +563,7 @@ function showFootsteps() {
             -150 - Math.random() * 180;
 
         element.style.transform =
-            `rotate(-90deg) translateX(${startX}px)`;
+            `translateX(${startX}px)`;
 
         const delay =
             index * 120 + Math.random() * 250;
@@ -573,7 +573,7 @@ function showFootsteps() {
             requestAnimationFrame(() => {
 
                 element.style.transform =
-                    "rotate(-90deg) translateX(0)";
+                    "translateX(0)";
 
             });
 
