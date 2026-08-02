@@ -1,4 +1,346 @@
 /*
+==================================================
+script.js
+==================================================
+*/
+
+"use strict";
+
+//==================================================
+// 定数
+//==================================================
+
+const SVG_NS = "http://www.w3.org/2000/svg";
+
+//==================================================
+// DOM
+//==================================================
+
+const titleScreen   = document.getElementById("titleScreen");
+const readingScreen = document.getElementById("readingScreen");
+
+const titleSVG = document.getElementById("titleSVG");
+const poemSVG  = document.getElementById("poemSVG");
+
+//==================================================
+// 描画データ
+//==================================================
+
+const poemLines = [];
+
+//==================================================
+// プレイヤー状態
+//==================================================
+
+const player = {
+
+    lineIndex: 0,
+    charIndex: 0,
+
+    state: "title",
+
+    isPlaying: false,
+
+    barShown: false,
+
+    squareCircleShown: false,
+    footstepsShown: false
+
+};
+
+//==================================================
+// 定数
+//==================================================
+
+const BAR_LINE = 4;
+
+//==================================================
+// 現在の行を取得
+//==================================================
+
+function getCurrentLine() {
+
+    return poemLines[player.lineIndex] ?? null;
+
+}
+
+//==================================================
+// SVG文字生成
+//==================================================
+
+function createCharacter(character) {
+
+    const text = document.createElementNS(SVG_NS, "text");
+
+    text.textContent = character.text;
+
+    const special = specialCharacters[character.text] ?? {};
+
+    const x = character.x + (special.dx ?? 0);
+    const y = character.y + (special.dy ?? 0);
+
+    text.setAttribute("x", x);
+    text.setAttribute("y", y);
+
+    let className = character.class ?? "";
+
+    if (special.horizontal) {
+        className += " horizontalChar";
+    }
+
+    if (special.sideways) {
+        className += " sidewaysChar";
+    }
+
+    text.setAttribute("class", className.trim());
+
+    if (special.rotate !== undefined) {
+
+        text.setAttribute(
+            "transform",
+            `rotate(${special.rotate} ${x} ${y})`
+        );
+
+    }
+
+    if (special.fontSize) {
+        text.setAttribute("font-size", special.fontSize);
+    }
+
+    if (character.text === "👣") {
+
+        if (character.blockIndex === 2) {
+            text.setAttribute("fill", "#7b5ea7");
+        }
+
+        if (character.blockIndex === 3) {
+            text.setAttribute("fill", "#000000");
+        }
+
+    }
+
+    const hiddenClasses = [
+        "square",
+        "circle",
+        "footstep"
+    ];
+
+    if (
+        hiddenClasses.some(name => className.includes(name))
+    ) {
+
+        text.style.opacity = 0;
+
+    } else {
+
+        text.style.opacity = 0;
+
+    }
+
+    return text;
+
+}
+
+//==================================================
+// タイトル描画
+//==================================================
+
+function drawTitle() {
+
+    TITLE.characters.forEach(character => {
+
+        titleSVG.appendChild(
+            createCharacter(character)
+        );
+
+    });
+
+    titleSVG
+        .querySelectorAll("text")
+        .forEach(text => {
+
+            text.style.opacity = 1;
+
+        });
+
+}
+
+//==================================================
+// 作者名描画
+//==================================================
+
+function drawAuthor() {
+
+    AUTHOR.characters.forEach(character => {
+
+        titleSVG.appendChild(
+            createCharacter(character)
+        );
+
+    });
+
+    titleSVG
+        .querySelectorAll(".authorChar")
+        .forEach(text => {
+
+            text.style.opacity = 1;
+
+        });
+
+}
+
+//==================================================
+// bar描画
+//==================================================
+
+function drawBar() {
+
+    const barCharacters = [
+
+        { text: "b", x: 1496, y: 695 },
+        { text: "a", x: 1544, y: 695 },
+        { text: "r", x: 1590, y: 695 }
+
+    ];
+
+    barCharacters.forEach(character => {
+
+        poemSVG.appendChild(
+
+            createCharacter({
+
+                ...character,
+
+                class: "poemChar bar"
+
+            })
+
+        );
+
+    });
+
+}
+
+//==================================================
+// 行送り量
+//==================================================
+
+function getAdvance(char, block) {
+
+    return block.lineGap;
+
+}
+
+//==================================================
+// 詩本文描画
+//==================================================
+
+function drawPoem() {
+
+    POEM.columns.forEach((block, blockIndex) => {
+
+        block.columns.forEach((line, columnIndex) => {
+
+            const currentLine = [];
+
+            let currentY = block.startY;
+
+            const chars = [...line];
+
+            let afterDoubleParen = false;
+
+            chars.forEach((char, index) => {
+
+                let drawY = currentY;
+
+                if (afterDoubleParen) {
+
+                    drawY -= 22;
+
+                }
+
+                if (
+
+                    index > 0 &&
+                    chars[index - 1] === "（" &&
+                    char === "（"
+
+                ) {
+
+                    drawY -= 22;
+
+                    afterDoubleParen = true;
+
+                }
+
+                const charElement = createCharacter({
+
+                    text: char,
+
+                    x: block.xPositions
+                        ? block.xPositions[columnIndex]
+                        : block.startX - columnIndex * block.columnGap,
+
+                    y: drawY,
+
+                    class:
+
+                        char === "■" ? "poemChar square" :
+
+                        char === "●" ? "poemChar circle" :
+
+                        char === "👣" ? "poemChar footstep" :
+
+                        char === "（" ? "poemChar paren" :
+
+                        char === "）" ? "poemChar paren" :
+
+                        "poemChar",
+
+                    blockIndex
+
+                });
+
+                poemSVG.appendChild(charElement);
+
+                currentLine.push(charElement);
+
+                let advance = getAdvance(char, block);
+
+                if (blockIndex === 3 && columnIndex === 6) {
+
+                    if (index === 2) advance += 8;
+                    if (index === 3) advance += 4;
+                    if (index === 4) advance += 2;
+                    if (index === 5) advance += 1;
+                    if (index === 12) advance += 4;
+                    if (index === 23) advance += 2;
+                    if (index === 24) advance += 1;
+
+                }
+
+                if (blockIndex === 0 && columnIndex === 4) {
+
+                    if (index === 8) advance += 30;
+                    if (index === 15) advance += 32;
+
+                }
+
+                currentY += advance;
+
+            });
+
+            poemLines.push(currentLine);
+
+        });
+
+    });
+
+}
+
+
+書き直し
+/*
 
 =========================================================
 
