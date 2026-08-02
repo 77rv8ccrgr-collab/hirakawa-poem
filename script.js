@@ -533,7 +533,7 @@ start();
 
     return;
 
-}
+} //
 
       player.lineIndex++;
       player.charIndex = 0;
