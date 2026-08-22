@@ -293,31 +293,3 @@ body{
     transition: transform 1.8s linear;
 
 }
-
-@media (max-width: 600px) {
-
-    .titleChar {
-        font-size: 50px;
-    }
-
-    .authorChar {
-        font-size: 43px;
-    }
-
-    .poemChar {
-        font-size: 36px;
-    }
-
-    .verticalChar {
-        font-size: 40px;
-    }
-
-    .horizontalChar {
-        font-size: 39px;
-    }
-
-    .bar {
-        font-size: 37px;
-    }
-
-}
