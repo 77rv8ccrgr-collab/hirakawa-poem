@@ -564,6 +564,8 @@ console.log(element.getAttribute("transform"));
 
         element.removeAttribute("transform");
 
+        console.log("REMOVE TEST", element.getAttribute("transform"));
+
         const startX =
             -150 - Math.random() * 180;
 
