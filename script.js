@@ -585,7 +585,7 @@ console.log(element.getAttribute("transform"));
         const startX =
             -150 - Math.random() * 180;
 
-        element.style.transform =`rotate(-90deg) translateX(${startX}px)`;
+        element.style.transform =`translateX(${startX}px)`;
 
         element.classList.add("walking");    
 
@@ -596,7 +596,7 @@ console.log(element.getAttribute("transform"));
 
             requestAnimationFrame(() => {
 
-                element.style.transform ="rotate(-90deg) translateX(0)";
+                element.style.transform ="translateX(0)";
 
             });
 
