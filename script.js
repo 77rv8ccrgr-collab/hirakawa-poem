@@ -574,6 +574,12 @@ console.log(element.getAttribute("transform"));
         
         element.style.transform =`translateX(${startX}px)`;
 
+        console.log(
+    "AFTER MOVE:",
+    element.getAttribute("transform"),
+    element.style.transform
+);
+
         element.classList.add("walking");    
 
         const delay =
