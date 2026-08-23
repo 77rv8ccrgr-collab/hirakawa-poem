@@ -562,6 +562,8 @@ console.log(element.getAttribute("transform"));
 
         element.style.opacity = 1;
 
+        element.removeAttribute("transform");
+
         const startX =
             -150 - Math.random() * 180;
 
