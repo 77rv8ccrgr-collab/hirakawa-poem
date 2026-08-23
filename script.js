@@ -577,6 +577,8 @@ function showFootsteps() {
 
     footsteps.forEach((element, index) => {
 
+        const mover = element.parentElement;
+
 console.log(element.getAttribute("transform"));
 
         element.style.opacity = 1;
@@ -589,7 +591,7 @@ console.log(element.getAttribute("transform"));
     element.getAttribute("transform")
 );
         
-        element.style.transform =`translateX(${startX}px)`;
+        mover.style.transform =`translateX(${startX}px)`;
 
         console.log(
     "AFTER MOVE:",
@@ -606,7 +608,7 @@ console.log(element.getAttribute("transform"));
 
             requestAnimationFrame(() => {
 
-                element.style.transform ="translateX(0)";
+                mover.style.transform ="translateX(0)";
 
             });
 
