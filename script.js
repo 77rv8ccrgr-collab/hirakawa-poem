@@ -405,6 +405,10 @@ async function playCurrentLine() {
 
         character.style.opacity = 1;
 
+        if (character.textContent === "👣") {
+    character.parentElement.style.opacity = 1;
+}
+
         await new Promise(resolve =>
             setTimeout(resolve, 45)
         );
