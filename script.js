@@ -94,14 +94,17 @@ function createCharacter(character) {
 
     text.setAttribute("class", className.trim());
 
-    if (special.rotate !== undefined) {
+    if (
+    special.rotate !== undefined &&
+    character.text !== "👣"
+) {
 
-        text.setAttribute(
-            "transform",
-            `rotate(${special.rotate} ${x} ${y})`
-        );
+    text.setAttribute(
+        "transform",
+        `rotate(${special.rotate} ${x} ${y})`
+    );
 
-    }
+}
 
     if (special.fontSize) {
         text.setAttribute("font-size", special.fontSize);
