@@ -313,14 +313,6 @@ function drawPoem() {
         "g"
     );
 
-    group.setAttribute(
-        "transform",
-        `rotate(0 ${block.xPositions
-            ? block.xPositions[columnIndex]
-            : block.startX - columnIndex * block.columnGap
-        } ${drawY})`
-    );
-
     group.appendChild(charElement);
 
     poemSVG.appendChild(group);
