@@ -74,7 +74,7 @@ const specialCharacters = {
 
    "‐": { rotate: 90, dx: 30, dy: 20 },
     "#": { horizontal: true, dx: -16, dy: 10 },
-    "👣": { rotate: 90, dx: -20, dy: 18 },
+    "👣": { rotate: 0, dx: -20, dy: 18 },
     "bar": { horizontal: true, dx: 0, dy: 0 },
 
     "0": { horizontal: true, dx: -14, dy: 2 },
