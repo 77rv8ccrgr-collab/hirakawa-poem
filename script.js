@@ -95,9 +95,7 @@ function createCharacter(character) {
     text.setAttribute("class", className.trim());
 
     if (
-    special.rotate !== undefined &&
-    character.text !== "👣"
-) {
+    special.rotate !== undefined) {
 
     text.setAttribute(
         "transform",
