@@ -306,9 +306,34 @@ function drawPoem() {
 
                 });
 
-                poemSVG.appendChild(charElement);
+                if (char === "👣") {
 
-                currentLine.push(charElement);
+    const group = document.createElementNS(
+        SVG_NS,
+        "g"
+    );
+
+    group.setAttribute(
+        "transform",
+        `rotate(-90 ${block.xPositions
+            ? block.xPositions[columnIndex]
+            : block.startX - columnIndex * block.columnGap
+        } ${drawY})`
+    );
+
+    group.appendChild(charElement);
+
+    poemSVG.appendChild(group);
+
+    currentLine.push(charElement);
+
+} else {
+
+    poemSVG.appendChild(charElement);
+
+    currentLine.push(charElement);
+
+}
 
                 let advance = getAdvance(char, block);
 
