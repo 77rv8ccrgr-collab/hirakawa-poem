@@ -567,6 +567,11 @@ console.log(element.getAttribute("transform"));
         const startX =
             -150 - Math.random() * 180;
 
+        console.log(
+    "BEFORE MOVE:",
+    element.getAttribute("transform")
+);
+        
         element.style.transform =`translateX(${startX}px)`;
 
         element.classList.add("walking");    
