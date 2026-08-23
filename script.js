@@ -315,7 +315,7 @@ function drawPoem() {
 
     group.setAttribute(
         "transform",
-        `rotate(-90 ${block.xPositions
+        `rotate(90 ${block.xPositions
             ? block.xPositions[columnIndex]
             : block.startX - columnIndex * block.columnGap
         } ${drawY})`
