@@ -142,23 +142,6 @@ function createCharacter(character) {
         text.style.opacity = 0;
 
     }
-
-if (character.text === "👣") {
-
-    const group = document.createElementNS(
-        "http://www.w3.org/2000/svg",
-        "g"
-    );
-
-    group.setAttribute(
-        "transform",
-        `rotate(-90 ${x} ${y})`
-    );
-
-    group.appendChild(text);
-
-    return group;
-}
     
     return text;
 
